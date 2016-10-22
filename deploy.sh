@@ -16,6 +16,6 @@ fi
 git commit -m "$msg"
 
 # Push source and build repos.
-git push origin master
-git subtree push --prefix=public git@github.com:mealeyst/macromealey.git gh-pages
-# git push origin `git subtree split --prefix public master`:gh-pages --force
+# git push origin master
+# git subtree push --prefix=public git@github.com:mealeyst/macromealey.git gh-pages
+git push gh-pages `git subtree split --prefix origin master`:master --force
