@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="/css/styles.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/segment-js/1.0.8/segment.js"></script>
+    <title>
+  Hugo Site Builder &ndash; MacroMealey
+</title>
+  </head>
+  <body>
+    
+    <header role="site-nav">
+      <input id="site-nav-toggle" role="site-nav__toggle" type="checkbox"/>
+      <div class="site-nav__menu-wrapper">
+        <label for="site-nav-toggle" class="site-nav__toggle-icon"></label>
+        <ul role="site-nav__menu">
+          <li><a href="/about">About</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/lab">Laboratory</a></li>
+        </ul>
+      </div>
+      <a href="http://mealeyst.github.io"><svg class="site-nav__logo" data-name="macromealey-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 249.97">
+        <defs>
+        <style>
+        .cls-1{fill:#3296d2;}.cls-2{fill:#006596;}</style>
+        </defs>
+        <title>MacroMealeyLogoRounded</title>
+        <polygon class="cls-1" points="75 50 92.9 67.9 100 75 125 100 150 125 175 100 200 75 207.1 67.9 225 50 250 25 267.83 7.17 275 0 261.79 0 225 0 200 25 175 50 172.47 52.53 150 75 127.53 52.53 125 50 100 25 75 0 38.21 0 25 0 32.17 7.17 50 25 75 50"/>
+        <path class="cls-2" d="M347.83,137.17,330,155l-25,25-17.9,17.9A100,100,0,0,1,232.58,380a150,150,0,0,0,115.25-242.8Z" transform="translate(-80 -130)"/>
+        <path class="cls-2" d="M130,280a99.88,99.88,0,0,1,42.9-82.1L155,180l-25-25-17.83-17.83A150,150,0,0,0,227.42,380,100,100,0,0,1,130,280Z" transform="translate(-80 -130)"/>
+      </svg>
+    </a>
+    </header>
+    <main role="content">
+      
+  <article role="post">
+    <h1>Hugo Site Builder</h1>
+    
+
+<h1 id="prologue">Prologue</h1>
+
+<p>For quite a while, I&rsquo;ve been looking for a content management system that
+was easy to use, but allowed for loads of customization. I had tried previously
+to dive into the likes of WinterSmith not wanting to leave the comfort of
+Node.js which I had taken a liking to. I found that while some of the static
+Wintersmith was indeed easy to install and get set up, the time it took to do
+customizations and set up things such as SASS compilation and minification were
+taking me longer than I had hoped. It actually took me so long to do that I
+instead opted to start my own static site generator that allowed for more
+flexibility. The issue that I always had when building my own personal site was
+the constraint of my good old friend Father Time. I would start getting into the
+processes of building out my own static site generator and then get frustrated
+with the fact that I was spending more time on trying to build out the project
+than I was getting something out for people to read. I knew what I needed, but I
+hadn&rsquo;t yet found a solution that fit my needs, that is until I stumbled onto
+Hugo.</p>
+
+<p>So why did Hugo stand out to me? Well for starters, I loved the command line
+interface. <code>hugo new site my-blog</code> creates a new site, <code>hugo new
+post/my-first-post.md</code> will create a new post. Those commands were of course
+awesome in their own right, but the ability to do: <code>hugo new
+theme my-first-theme</code> or the support out of the box for multiple content types
+simply by defining a markdown file in the archtypes directory, making a new
+directory for that content type and then simply running: <code>hugo new
+relative/path/to/content.md</code> needless to say I was quickly hooked! With my new
+system in tow, I set out on building my personal site.</p>
+
+  </article>
+
+    </main>
+    <footer role="site-footer">
+      This site was designed and built in Hugo by Shawn Mealey &copy;2016
+
+    </footer>
+    
+  </body>
+</html>

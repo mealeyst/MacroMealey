@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MacroMealey</title>
+    <link>http://mealeyst.github.io/</link>
+    <description>Recent content on MacroMealey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Jan 2040 22:01:00 -0600</lastBuildDate>
+    <atom:link href="http://mealeyst.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About</title>
+      <link>http://mealeyst.github.io/About/</link>
+      <pubDate>Wed, 18 Jan 2040 22:01:00 -0600</pubDate>
+      
+      <guid>http://mealeyst.github.io/About/</guid>
+      <description>&lt;p&gt;Neque porro quisquam est qui dolorem
+ipsum quia dolor sit amet consectetur
+adipisci velit.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo Site Builder</title>
+      <link>http://mealeyst.github.io/lab/hugo-site-builder/</link>
+      <pubDate>Tue, 04 Oct 2016 08:23:29 -0400</pubDate>
+      
+      <guid>http://mealeyst.github.io/lab/hugo-site-builder/</guid>
+      <description>
+
+&lt;h1 id=&#34;prologue&#34;&gt;Prologue&lt;/h1&gt;
+
+&lt;p&gt;For quite a while, I&amp;rsquo;ve been looking for a content management system that
+was easy to use, but allowed for loads of customization. I had tried previously
+to dive into the likes of WinterSmith not wanting to leave the comfort of
+Node.js which I had taken a liking to. I found that while some of the static
+Wintersmith was indeed easy to install and get set up, the time it took to do
+customizations and set up things such as SASS compilation and minification were
+taking me longer than I had hoped. It actually took me so long to do that I
+instead opted to start my own static site generator that allowed for more
+flexibility. The issue that I always had when building my own personal site was
+the constraint of my good old friend Father Time. I would start getting into the
+processes of building out my own static site generator and then get frustrated
+with the fact that I was spending more time on trying to build out the project
+than I was getting something out for people to read. I knew what I needed, but I
+hadn&amp;rsquo;t yet found a solution that fit my needs, that is until I stumbled onto
+Hugo.&lt;/p&gt;
+
+&lt;p&gt;So why did Hugo stand out to me? Well for starters, I loved the command line
+interface. &lt;code&gt;hugo new site my-blog&lt;/code&gt; creates a new site, &lt;code&gt;hugo new
+post/my-first-post.md&lt;/code&gt; will create a new post. Those commands were of course
+awesome in their own right, but the ability to do: &lt;code&gt;hugo new
+theme my-first-theme&lt;/code&gt; or the support out of the box for multiple content types
+simply by defining a markdown file in the archtypes directory, making a new
+directory for that content type and then simply running: &lt;code&gt;hugo new
+relative/path/to/content.md&lt;/code&gt; needless to say I was quickly hooked! With my new
+system in tow, I set out on building my personal site.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Red Letter Day</title>
+      <link>http://mealeyst.github.io/article/First/</link>
+      <pubDate>Mon, 03 Oct 2016 19:20:52 -0400</pubDate>
+      
+      <guid>http://mealeyst.github.io/article/First/</guid>
+      <description>
+
+&lt;h2 id=&#34;today-is-a-red-letter-day&#34;&gt;Today is a Red Letter Day&lt;/h2&gt;
+
+&lt;p&gt;For an awfully long time I have been wanting to create my own personal site, one where I could capture work that I had done both professionally as well as side projects to share with the world. I finally stopped hemming and hawing over how my site would look, feel, and function and decided to just get something functional up on the web and just iterate the heck out of it! If you are curious as to why I have both a &lt;em&gt;blog&lt;/em&gt; as well as a &lt;em&gt;laboratory&lt;/em&gt;, there was an organizational reason for it. I felt that the &lt;em&gt;blog&lt;/em&gt; could be more of a free-form area where I could collect my thoughts on technology, processes related to software development, and act as a coding diary of sorts. In this fashion, the blog is less structural and more open ended then the &lt;em&gt;laboratory&lt;/em&gt;. The &lt;em&gt;laboratory&lt;/em&gt; is relegated to small (or possibly large) project similar to the wonderful work done over at &lt;a href=&#34;http://tympanus.net/codrops/&#34;&gt;CoDrops&lt;/a&gt; where each post (or series of posts) will contain the resources needed to see a project all the way to completion. I felt that the separation would be easier for users to navigate and digest. Now that I have my site up and running there are a few side projects that I have been meaning to sink my teeth into.&lt;/p&gt;
+
+&lt;p&gt;The first project I was hoping to pick up is a professional side project that I have been discussing at work for a while. The idea is to hook up our React user interface to a separate rate repository who&amp;rsquo;s sole purpose is for the generation of a style guide. This repository would then be used as a dependency for the React components as well as our static Rails front end that we have for several of our landing pages. The idea is that the various front ends  would import styles, naming conventions, and possibly generate a barebones HTML/React components based on the elements generated in the style guide. For the style guide portion of the project I was looking to invest in &lt;a href=&#34;https://patternlab.io&#34;&gt;Pattern Lab&lt;/a&gt;. The principles that Brad Frost has put out had intrigued me back in my contractor days at NorthPoint Solutions, and I&amp;rsquo;ve been meaning to implement his work ever since.&lt;/p&gt;
+
+&lt;p&gt;The second project that I have actually already started to work on, but have been failing to put as much time into is the Node.js base CMS &lt;a href=&#34;https://github.com/mealeyst/TaurusCMS&#34;&gt;Taurus CMS&lt;/a&gt;. This has actually been a joint project with several other developers. The purpose of the project is not only to gain a deeper understanding of the inner workings of Node.js, but to also delve into the architecture and development of a full scale enterprise application. For the project I am looking to launch with a MVP product that contains:
+* A database abstraction layer with a working Postgres implementation
+* Command line tools to perform CRUD operations for content types as well as possible database management
+* Use the Hapi framework to create an API to perform CRUD operations for content types
+* Contain example Content Types and Taxonomies&lt;/p&gt;
+
+&lt;p&gt;While that MVP seems small (especially without a front end portion) the small amount of functionality that has been built already has taken a tremendous amount of research and trial and error.&lt;/p&gt;
+
+&lt;p&gt;For the blog, I am looking to start up a &lt;em&gt;Ready for Rails&lt;/em&gt; development blog in which I do a weekly dive into Rails to take me one step closer to being a true start up unicorn, and finally be able to take an entire task from concept to completion at work.&lt;/p&gt;
+
+&lt;p&gt;And as always, I am going to be looking to improve the user experience on the site and make it so that the experience feels more tailored and unique to first time visitors.&lt;/p&gt;
+
+&lt;p&gt;As for now&amp;hellip; Onwards and upwards!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
