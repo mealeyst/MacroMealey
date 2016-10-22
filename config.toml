@@ -1,0 +1,7 @@
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+theme = "macromealey2016"
+baseurl = "http://mealeyst.github.io"
+languageCode = "en-us"
+title = "MacroMealey"
