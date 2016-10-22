@@ -167,7 +167,7 @@ input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholde
   color: transparent;
 }
 
-button {
+button, input[type="submit"] {
   max-width: 150px;
   height: 2.4em;
 
