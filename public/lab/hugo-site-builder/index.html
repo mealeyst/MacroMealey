@@ -1,41 +1,51 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width"/>
-    <link rel="stylesheet" href="./css/styles.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/segment-js/1.0.8/segment.js"></script>
+    <link rel="stylesheet" href="http://mealeyst.github.io/styleguide/assets/toolkit/styles/toolkit.css">
+    <script type="text/javascript" src="http://mealeyst.github.io/styleguide/assets/toolkit/scripts/toolkit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/segment-js/1.0.8/segment.js"></script>
     <title>
-  Hugo Site Builder &ndash; MacroMealey
-</title>
+      MacroMealey
+    </title>
   </head>
-  <body>
+  <body class="dark">
     
-    <header role="site-nav">
-      <input id="site-nav-toggle" role="site-nav__toggle" type="checkbox"/>
-      <div class="site-nav__menu-wrapper">
-        <label for="site-nav-toggle" class="site-nav__toggle-icon"></label>
-        <ul role="site-nav__menu">
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/lab">Laboratory</a></li>
-        </ul>
-      </div>
-      <a href="http://mealeyst.github.io"><svg class="site-nav__logo" data-name="macromealey-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 249.97">
-        <defs>
-        <style>
-        .cls-1{fill:#3296d2;}.cls-2{fill:#006596;}</style>
-        </defs>
-        <title>MacroMealeyLogoRounded</title>
-        <polygon class="cls-1" points="75 50 92.9 67.9 100 75 125 100 150 125 175 100 200 75 207.1 67.9 225 50 250 25 267.83 7.17 275 0 261.79 0 225 0 200 25 175 50 172.47 52.53 150 75 127.53 52.53 125 50 100 25 75 0 38.21 0 25 0 32.17 7.17 50 25 75 50"/>
-        <path class="cls-2" d="M347.83,137.17,330,155l-25,25-17.9,17.9A100,100,0,0,1,232.58,380a150,150,0,0,0,115.25-242.8Z" transform="translate(-80 -130)"/>
-        <path class="cls-2" d="M130,280a99.88,99.88,0,0,1,42.9-82.1L155,180l-25-25-17.83-17.83A150,150,0,0,0,227.42,380,100,100,0,0,1,130,280Z" transform="translate(-80 -130)"/>
-      </svg>
-    </a>
+    <header class="site-navigation">
+      <nav class="site-navigation__mobile ms-nav">
+        <input id="site-toggle" class="ms-nav__toggle" type="checkbox">
+        <label for="site-toggle" class="ms-nav__toggle-interface"></label>
+        <a class="ms-nav__logo link--icon" href="http://mealeyst.github.io">
+          <svg class="icon" viewbox="0 0 350 350">
+            <use xlink:href="#logo-icon"></use>
+          </svg>
+        </a>
+        <div class="ms-nav__drawer">
+          <a href="/about" class="ms-nav__link link--nav">About</a>
+          <a href="/contact" class="ms-nav__link link--nav">Contact</a>
+          <a href="/lab" class="ms-nav__link link--nav">Laboratory</a>
+          <a href="/article" class="ms-nav__link link--nav">Thought</a>
+        </div>
+      </nav>
+      <nav class="site-navigation__desktop ds-nav">
+            <a class="ds__link link--nav" href="/about">ABOUT</a></li>
+            <a class="ds__link link--nav" href="/contact">CONTACT</a></li>
+            <a class="ds__link ds__logo link--icon" href="http://mealeyst.github.io">
+              <svg class="icon" viewbox="0 0 350 350">
+                <use xlink:href="#logo-icon"></use>
+              </svg>
+            </a>
+            <a class="ds__link link--nav" href="/lab">LABORATORY</a>
+            <a class="ds__link link--nav" href="/article">THOUGHTS</a>
+      </nav>
     </header>
-    <main role="content">
+
+    <main class="background" role="content">
       
   <article role="post">
+    <h1>Expiriment</h1>
     <h1>Hugo Site Builder</h1>
     
 
@@ -70,9 +80,17 @@ system in tow, I set out on building my personal site.</p>
   </article>
 
     </main>
-    <footer role="site-footer">
-      This site was designed and built in Hugo by Shawn Mealey &copy;2016
-
+    <footer class="site-footer">
+      <section class="site-footer__full">
+        <h3 class="alternate-text">My Goals:</h3>
+        <hr class="hr--dark"/>
+      </section>
+        <section id="objectives" class="site-footer__objectives">
+        </section>
+      <section class="site-footer__copyright">
+        <hr class="hr--dark"/>
+        <h5 class="alternate-text">This site was developer and designed by Shawn Mealey - Macromealey &copy;2017</h5>
+      </section>
     </footer>
     
   </body>

@@ -1,0 +1,94 @@
+// Global variables:
+// Unitless, interpreted as pixels
+$fg_columns: 12 !default; // Maximum number of columns
+$fg_gutter: 24 !default; // gutter between columns
+$fg_padding: 12 !default; // padding for column boxes
+
+// Mixins:
+// Main grid mixin
+@mixin fg($fg_cols: 0, $fg_conf_gutter: $fg_gutter, $fg_conf_padding: $fg_padding) {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: (-1 * $fg_conf_gutter) * 1px;
+
+  > * { padding: $fg_conf_padding * 1px;
+      margin-left: $fg_conf_gutter * 1px;
+      box-sizing: border-box; }
+
+  $fg_calc_percent: (1/$fg_cols) * 100%;
+  $fg_calc_gutter_allowance: $fg_conf_gutter * 1px;
+
+  > * { width: calc(#{$fg_calc_percent} - #{$fg_calc_gutter_allowance}); }
+}
+
+// width override for a column in wrap scenario:
+@mixin width($fg_ratio, $fg_conf_gutter: $fg_gutter) {
+  $fg_calc_percent: ($fg_ratio / $fg_columns) * 100%;
+  $fg_calc_gutter: $fg_conf_gutter * 1px;
+  width: calc(#{$fg_calc_percent} - #{$fg_calc_gutter});
+};
+
+.l-row {
+  @include fg($fg_columns);
+  &--align-center {
+    @include fg($fg_columns);
+    justify-content: center;
+  }
+  &--align-right {
+    @include fg($fg_columns);
+    justify-content: flex-end;
+  }
+  &--align-left {
+    @include fg($fg_columns);
+    justify-content: flex-start;
+  }
+  &--space-around {
+    @include fg($fg_columns);
+    justify-content: space-around;
+  }
+  &--space-between {
+    @include fg($fg_columns);
+    justify-content: space-between;
+  }
+}
+
+
+.l-col-{
+  &1 {
+    @include width(1);
+  }
+  &2 {
+    @include width(2);
+  }
+  &3 {
+    @include width(3);
+  }
+  &4 {
+    @include width(4);
+  }
+  &5 {
+    @include width(5);
+  }
+  &6 {
+    @include width(6);
+  }
+  &7 {
+    @include width(7);
+  }
+  &8 {
+    @include width(8);
+  }
+  &9 {
+    @include width(9);
+  }
+  &10 {
+    @include width(10);
+  }
+  &11 {
+    @include width(11);
+  }
+  &12 {
+    @include width(12);
+  }
+}

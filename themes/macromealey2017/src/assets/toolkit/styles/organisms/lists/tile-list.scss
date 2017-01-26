@@ -1,0 +1,20 @@
+.tile-list{
+  width: 100%;
+  &__items {
+    padding: 0 ($fg_padding * 1px);
+    list-style: none;
+    @include fg(12);
+  }
+  &__item {
+    display: flex;
+    @include width(12);
+  }
+}
+@include breakpoint(md){
+  .tile-list{
+    flex-direction: column;
+    &__item {
+      @include width(6);
+    }
+  }
+}

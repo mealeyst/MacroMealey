@@ -1,0 +1,30 @@
+@mixin breakpoint($point) {
+  @if $point == lg {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+  @else if $point == md {
+    @media only screen and (min-width: 992px) {
+      @content;
+    }
+  }
+  @else if $point == sm {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @else if $point == xs {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+  @else if $point == retina {
+    @media
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-reolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+        @content;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.ds-nav{
+  display: flex;
+
+  height: 60px;
+
+  background-color: $background-dark;
+
+  justify-content: space-around;
+  align-items: center;
+  @include shadow('small');
+  &__link {
+    text-transform: uppercase;
+  }
+}

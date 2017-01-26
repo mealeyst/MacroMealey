@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="http://mealeyst.github.ioassets/toolkit/styles/toolkit.css">
+    <script type="text/javascript" src="http://mealeyst.github.io/assets/toolkit/scripts/toolkit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/segment-js/1.0.8/segment.js"></script>
+    <title>
+  Hugo Site Builder &ndash; MacroMealey
+</title>
+  </head>
+  <body>
+    
+    <header role="site-nav">
+      <input id="site-nav-toggle" role="site-nav__toggle" type="checkbox"/>
+      <div class="site-nav__menu-wrapper">
+        <label for="site-nav-toggle" class="site-nav__toggle-icon"></label>
+        <ul role="site-nav__menu">
+          <li><a href="/about">About</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/lab">Laboratory</a></li>
+        </ul>
+      </div>
+      <a class="site-nav__logo-wrapper"href="http://mealeyst.github.io">
+        <img class="site-nav__logo" src="http://mealeyst.github.ioassets/images/MacroMealeyLogoRounded002.svg" />
+      </a>
+    </header>
+    <main role="content">
+      
+<style>
+  main[role="styleguide"] {
+    background-color: #BDBDBD;
+    padding: 30px 15px;
+  }
+  .deck__title {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #212121;
+  }
+  .patternlab-example {
+    background-color: #DCDBDB;
+    margin: 20px 15px 30px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.7);
+     
+  }
+  .patternlab__deck {
+    margin: 25px 0;
+  }
+
+  .color__swatches {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 90px;
+  }
+  .color__swatch {
+    width: 75px;
+    height: 75px;
+    border-radius: 2px;
+    color: #DCDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.7);
+    animation: lower 0.1s 1;
+    position: relative;
+  }
+  .color__swatch::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.3);
+    opacity: 0.0;
+    transition: opacity 0.1s ease-in;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .color__swatch--light {
+    color: #000000;
+  }
+  .font {
+    display: flex;
+    margin-bottom: 15px;
+  }
+  .font span {
+    width: 50%;
+    justify-content: flex-start;
+  }
+  .font--black {
+    font-weight: 900;
+  }
+  .font--black-italic {
+    font-weight: 900;
+    font-style: italic;
+  }
+  .font--bold {
+    font-weight: 700;
+  }
+  .font--bold-italic {
+    font-weight: 700;
+    font-style: italic;
+  }
+  .font--bold-condensed {
+    font-family: "RobotoCond";
+    font-weight: 700;
+  }
+  .font--bold-condensed-italic {
+    font-family: "RobotoCond";
+    font-weight: 700;
+    font-style: italic;
+  }
+  .font--condensed {
+    font-family: "RobotoCond";
+    font-size: 400;
+  }
+  .font--condensed-italic {
+    font-family: "RobotoCond";
+    font-style: italic;
+  }
+  .font--italic {
+    font-style: italic;
+  }
+  .font--light {
+    font-weight: 200;
+  }
+  .font--light-italic {
+    font-weight: 200;
+    font-style: italic;
+  }
+  .font--medium {
+    font-weight: 500;
+  }
+  .font--medium-italic {
+    font-weight: 500;
+    font-style: italic;
+  }
+  .font--thin {
+    font-weight: 100;
+  }
+  .font--thin-italic {
+    font-weight: 100;
+    font-style: italic;
+  }
+  .animation-stage {
+    padding: 15px;
+  }
+  .animation-example--lift {
+    width: 75px;
+    height: 75px;
+    width: 75px;
+    height: 75px;
+    border-radius: 2px;
+    background-color: #DCDBDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    box-shadow: 0px 0px 7px #000000;
+    animation: lower 0.1s 1;
+  }
+  .animation-example--lift:hover {
+    animation: lift 0.1s 1;
+    box-shadow: 0px 0px 15px #000000;
+    transform: scale(1.01);
+  }
+  .animation-example--slide-wrapper{
+    background-color: #BDBDBD;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 90px;
+    overflow-x: hidden;
+  }
+  .animation-example--slide {
+    width: 500px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    transition: transform 0.25s ease-out;
+  }
+  .animation-example--slide:after {
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0px 0px 7px #000000;
+    content: "";
+    background-color: #DCDBDB;
+    margin: 0 10px;
+  }
+  .animation-example--slide-wrapper:hover .animation-example--slide{
+    transform: translateX(405px);
+  }
+  .animation-example--grow-wrapper {
+    height: 500px;
+    width: 300px;
+    background-color: #BDBDBD;
+    border-radius: 5px;
+    padding: 15px;
+
+  }
+
+  .animation-example--grow {
+    height: 75px;
+    width: 75px;
+    border-radius: 5px;
+    background-color: #DCDBDB;
+    box-shadow: 0px 0px 7px #000000;
+    transition: height 0.35s ease-out, width 0.25s ease-out;
+  }
+
+  .animation-example--grow:hover {
+    height: 500px;
+    width: 300px;
+  }
+  .buttons__example, .buttons__example--light {
+    width: 300px;
+    padding: 10px;
+  }
+  .buttons__example {
+    background-color: #DCDBDB;
+  }
+  .buttons__example--light {
+    background-color: #3C3333;
+  }
+
+</style>
+<main role="styleguide">
+  <h1>Styleguide</h1>
+  <div id="atoms">
+    <h2>Atoms</h2>
+    <div id="base">
+      <div id="brand-colors" class="patternlab-example">
+        <h3 class="deck__title">Brand Colors</h3>
+        <ul class="color__swatches">
+          <li class="color__swatch color__swatch--light" style="background-color:#DCDBDB;">#DCDBDB</li>
+          <li class="color__swatch" style="background-color:#3C3333;">#3C3333</li>
+          <li class="color__swatch" style="background-color:#5B5252;">#5B5252</li>
+          <li class="color__swatch" style="background-color:#D26127;">#D26127</li>
+          <li class="color__swatch color__swatch--light" style="background-color:#E5A92F;">#E5A92F</li>
+        </ul>
+      </div>
+      <div id="neutral-colors" class="patternlab-example">
+        <h3 class="deck__title">Neutral Colors</h3>
+        <ul class="color__swatches">
+          <li class="color__swatch color__swatch--light" style="background-color:#FFFFFF">#FFFFFF</li>
+          <li class="color__swatch color__swatch--light" style="background-color:#FAFAFA">#FAFAFA</li>
+          <li class="color__swatch color__swatch--light" style="background-color:#F5F5F5">#F5F5F5</li>
+          <li class="color__swatch color__swatch--light" style="background-color:#EEEEEE">#EEEEEE</li>
+          <li class="color__swatch color__swatch--light" style="background-color:#E0E0E0">#E0E0E0</li>
+          <li class="color__swatch color__swatch--light" style="background-color:#BDBDBD">#BDBDBD</li>
+        </ul>
+        <ul class="color__swatches">
+          <li class="color__swatch" style="background-color:#9E9E9E">#9E9E9E</li>
+          <li class="color__swatch" style="background-color:#757575">#757575</li>
+          <li class="color__swatch" style="background-color:#616161">#616161</li>
+          <li class="color__swatch" style="background-color:#424242">#424242</li>
+          <li class="color__swatch" style="background-color:#212121">#212121</li>
+          <li class="color__swatch" style="background-color:#000000">#000000</li>
+        </ul>
+      </div>
+      <div id="fonts" class="patternlab-example">
+        <h3 class="deck__title">Fonts</h3>
+        <div class="font font--normal"><span>Primary Font:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--italic"><span>Primary Font Italic:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--bold"><span>Primary Font Bold:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--bold-italic"><span>Primary Font Bold Italic:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--black"><span>Primary Font Black:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--black-italic"><span>Primary Font Black Italic:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--bold-condensed"><span>Primary Font Bold Condensed:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--bold-condensed-italic"><span>Primary Font Bold Condensed Italic:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--condensed"><span>Primary Font Condensed:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--condensed-italic"><span>Primary Font Condensed Italic:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--light"><span>Primary Font Light:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--light-italic"><span>Primary Font Light Italic:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--medium"><span>Primary Font Medium:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--medium-italic"><span>Primary Font Medium Italic:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--thin"><span>Primary Font Thin:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+        <div class="font font--thin-italic"><span>Primary Font Thin Italic:</span> <span>Sphinx of black quartz, judge my vow!</span></div>
+      </div>
+      <div id="animations" class="patternlab-example">
+        <h3 class="deck__title">Animations</h3>
+        <div class="animation-stage">
+          <h4>Lift</h4>
+          <div class="animation-example animation-example--lift"></div>
+        </div>
+        <div class="animation-stage">
+          <h4>Slide</h4>
+          <div class="animation-example animation-example--slide-wrapper">
+            <div class="animation-example animation-example--slide"></div>
+          </div>
+        </div>
+        <div class="animation-stage">
+          <h4>Grow</h4>
+          <div class="animation-example animation-example--grow-wrapper">
+            <div class="animation-example animation-example--grow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="buttons" class="patternlab-example">
+      <h3 class="deck__title">Buttons</h3>
+      <div class="patternlab__deck">
+        <h4>Default Buttons</h4>
+        <div class="buttons__example"><button class="button">Default</button></div>
+        <div class="buttons__example--light"><button class="button--light">Light</button></div>
+        <div class="buttons__example"><button disabled class="button">Disabled</button></div>
+        <div class="buttons__example--light"><button disabled class="button--light">Light Disabled</button></div>
+      </div>
+      <div class="patternlab__deck">
+        <h4>Solid Button</h4>
+        <div class="buttons__example"><button class="button--solid">Solid</button></div>
+        <div class="buttons__example--light"><button class="button--solid-light">Solid Light</button></div>
+        <div class="buttons__example"><button disabled class="button--solid">Solid Disabled</button></div>
+        <div class="buttons__example--light"><button disabled class="button--solid-light">Solid Light Disabled</button></div>
+      </div>
+    </div>
+    <div id="forms" class="patternlab-example">
+      <h3 class="deck__title">Inputs</h3>
+      <div id="forms__checkbox" class="patternlab__deck">
+        <h4>Input - Checkbox</h4>
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+      </div>
+      <div id="forms__color" class="patternlab__deck">
+        <h4>Input - Color</h4>
+        <input id="user-color" type="color" placeholder="#333333">
+      </div>
+      <div id="forms__date" class="patternlab__deck">
+        <h4>Input - Date</h4>
+        <input type="date" id="submit-date">
+      </div>
+      <div id="forms__email" class="patternlab__deck">
+        <h4>Input - Email</h4>
+        <input type="email" placeholder="john@example.com">
+      </div>
+      <div id="forms__month" class="patternlab__deck">
+        <h4>Input - Month</h4>
+        <input type="month">
+      </div>
+      <div id="forms__number" class="patternlab__deck">
+        <h4>Input - Number</h4>
+        <input type="number" placeholder="10">
+      </div>
+      <div id="forms__radio" class="patternlab__deck">
+        <h4>Input - Radio</h4>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </div>
+      <div id="forms__range" class="patternlab__deck">
+        <h4>Input - Range</h4>
+        <input type="range">
+      </div>
+      <div id="forms__search" class="patternlab__deck">
+        <h4>Input - Search</h4>
+        <input type="search" placeholder="Example">
+      </div>
+      <div id="forms__select" class="patternlab__deck">
+        <h4>Select</h4>
+        <select name="example-select" id="example-select">
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+          <option value="option4">Option 4</option>
+          <option value="option5">Option 5</option>
+        </select>
+      </div>
+      <div id="forms__telephone" class="patternlab__deck">
+        <h4>Input - Telephone</h4>
+        <input type="tel" placeholder="1 (800) 555-5555">
+      </div>
+      <div id="forms__text" class="patternlab__deck">
+        <h4> Input - Text</h4>
+        <input id="f-name" type="text" placeholder="First Name"/>
+      </div>
+      <div id="forms__textarea" class="patternlab__deck">
+        <h4>Textarea</h4>
+        <textarea name="example" rows="2" cols="40" placeholder="This is an example in the textarea"></textarea>
+      </div>
+      <div id="forms__time" class="patternlab__deck">
+        <h4>Input - Time</h4>
+        <input type="time">
+      </div>
+      <div id="forms__url" class="patternlab__deck">
+        <h4>Input - URL</h4>
+        <input type="url" placeholder="www.google.com">
+      </div>
+      <div id="forms__week" class="patternlab__deck">
+        <h4>Input - Week</h4>
+        <input type="week">
+      </div>
+    </div>
+    <div id="images" class="patternlab-example">
+      <h3 class="deck__title">Image</h3>
+      <div id="images__hero" class="patternlab__deck image-container">
+        <h4>Image - Hero</h4>
+        <img class="image--hero" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=1335%C3%97267&w=1335&h=267" alt="example-image-hero">
+      </div>
+      <div id="images__thumb" class="patternlab__deck">
+        <h4>Image - Thumbnail</h4>
+        <img src="https://placeholdit.imgix.net/~text?txtsize=10&txt=56%C3%9756&w=56&h=56" alt="example-image-thumb">
+      </div>
+      <div id="images__logo" class="patternlab__deck">
+        <h4>Image - Logo</h4>
+        <img class="image--logo" src="../../images/MacroMealeyLogoRounded002.svg" alt="example-logo">
+      </div>
+    </div>
+    <div id="text" class="patternlab-example">
+      <h3 class="deck__title">Text</h3>
+      <div id="text__heading" class="patternlab__deck">
+        <h4>Headings
+          <h1>Heading Level 1</h1>
+          <h2>Heading Level 2</h2>
+          <h3>Heading Level 3</h3>
+          <h3>Heading Level 4</h3>
+          <h4>Heading Level 5</h4>
+          <h6>Heading Level 6</h6></h4>
+      </div>
+      <div id="text__hr" class="patternlab__deck">
+        <h4>Horizontal Rule</h4>
+        <hr>
+      </div>
+      <div id="text__link" class="patternlab__deck">
+        <h4>Link</h4>
+        <a href="#text__link">Example Link</a>
+      </div>
+      <div id="text__strong" class="patternlab__deck">
+        <h4>Strong Text</h4>
+        <strong>Strong is used to indicate strong importance</strong>
+      </div>
+      <div id="text__em" class="patternlab__deck">
+        <h4>Emphasis Text</h4>
+        <em>This text has added emphasis</em>
+      </div>
+      <div id="text__bold" class="patternlab__deck">
+        <h4>Bold Text</h4>
+        <p>The <b>b element</b> is stylistically different text from normal text, without any special importance</p>
+      </div>
+      <div id="text__italic" class="patternlab__deck">
+        <h4>Italic Text</h4>
+        <p>The <i>i element</i> is text that is set off from the normal text</p>
+      </div>
+      <div id="text__underline" class="patternlab__deck">
+        <h4>Underlined Text</h4>
+        <p>The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation</p>
+      </div>
+      <div id="text__del-ins" class="patternlab__deck">
+        <h4>Deleted and Inserted Text</h4>
+        <p><del>This text is deleted</del> and <ins>This text is inserted</ins></p>
+      </div>
+      <div id="text__strikethrough" class="patternlab__deck">
+        <h4>Strikethrough Text</h4>
+        <p><s>This text has a strikethrough</s></p>
+      </div>
+      <div id="text__superscript" class="patternlab__deck">
+        <h4>Superscript Text</h4>
+        <p>Superscript<sup>®</sup></p>
+      </div>
+      <div id="text__subscript" class="patternlab__deck">
+        <h4>Subscripted Text</h4>
+        <p>Subscript for things like H<sub>2</sub>O</p>
+      </div>
+      <div id="text__small" class="patternlab__deck">
+        <h4>Small Text</h4>
+        <p><small>This small text is small for for fine print, etc.</small></p>
+      </div>
+      <div id="text__abbr" class="patternlab__deck">
+        <h4>Abbreviation Text</h4>
+        <p>Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr></p>
+      </div>
+      <div id="text__kbd" class="patternlab__deck">
+        <h4>Keyboard Input Text</h4>
+        <p>Keybord input: <kbd>Cmd</kbd></p>
+      </div>
+      <div id="text__q" class="patternlab__deck">
+        <h4>Quoted Text</h4>
+        <p><q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q></p>
+      </div>
+      <div id="text__cite" class="patternlab__deck">
+        <h4>Citation Text</h4>
+        <p><cite>This is a citation</cite>
+        </div>
+      <div id="text__dfn" class="patternlab__deck">
+      <h4>Definition Text</h4>
+    </p><p>The <dfn>dfn element</dfn> indicates a definition.</p>
+    </div>
+      <div id="text__mark" class="patternlab__deck">
+        <h4>Marked Text</h4>
+        <p>The <mark>mark element</mark> indicates a highlight</p>
+      </div>
+      <div id="text__code" class="patternlab__deck">
+        <h4>Inline Code Text</h4>
+        <p><code>This is what inline code looks like.</code></p>
+      </div>
+      <div id="text__samp" class="patternlab__deck">
+        <h4>Sample Text</h4>
+        <p><samp>This is sample output from a computer program</samp></p>
+      </div>
+      <div id="text__var" class="patternlab__deck">
+        <h4>Variable Text</h4>
+        <p>The <var>variarble element</var>, such as <var>x</var> = <var>y</var></p>
+      </div>
+      <div id="text__p" class="patternlab__deck">
+        <h4>Paragraph Text</h4>
+        <p>A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of a discourse in writing dealing with a particular point or idea. A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.</p>
+      </div>
+      <div id="text__pre" class="patternlab__deck">
+        <h4>Preformatted Text</h4>
+        <pre>
+P R E F O R M A T T E D T E X T
+! " # 1 % & ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = > ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~
+        </pre>
+      </div>
+    </div>
+  </div>
+  <div id="molecules">
+  </div>
+  <div id="organisms">
+  </div>
+  <div id="layouts">
+  </div>
+</main>
+
+    </main>
+    <footer role="site-footer">
+      This site was designed and built in Hugo by Shawn Mealey &copy;2016
+
+    </footer>
+    
+  </body>
+</html>

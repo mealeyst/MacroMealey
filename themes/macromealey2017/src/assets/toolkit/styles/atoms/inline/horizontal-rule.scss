@@ -1,0 +1,16 @@
+hr {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid;
+  border-color: lighten($black, 15);
+}
+.hr--dark {
+  color: $accent-dark;
+  border-bottom-color: darken($accent-dark, 15);
+}
+
+.hr--light {
+  color: $accent-light;
+  border-bottom-color: lighten($accent-light, 15);
+}

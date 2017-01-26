@@ -1,0 +1,17 @@
+colors:
+  primary:
+    Alto: "#DCDBDB"
+    Masala: "#3C3333"
+  secondary:
+    DonJuan: "#5B5252"
+    Piper: "#D26127"
+    FireBush: "#E5A92F"
+fonts:
+  Roboto:
+    - Lighter
+    - Normal
+    - Bold
+  Oswald:
+    - Lighter
+    - Normal
+    - Bold

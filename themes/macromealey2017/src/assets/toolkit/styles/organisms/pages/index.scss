@@ -1,0 +1,14 @@
+.blog-post {
+  margin: 0 ($fg_gutter * 1px);
+  padding: ($fg_padding * 1px);
+
+  border-radius: 5px;
+  background-color: $alto;
+
+  @include shadow('small');
+  img {
+    width: 100%;
+
+    border-radius: 5px;
+  }
+}

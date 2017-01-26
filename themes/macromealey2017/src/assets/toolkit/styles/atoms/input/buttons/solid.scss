@@ -1,0 +1,49 @@
+.button--solid {
+  color: $background-light;
+  border-color: $accent-dark;
+  background-color: $accent-dark;
+}
+
+.button--solid:disabled, .button--solid:hover:disabled {
+  opacity: 0.5;
+  color: $background-light;
+  border-color: $accent-dark;
+  background-color: $accent-dark;
+}
+
+.button--solid:hover {
+  color: $background-light;
+  border-color: darken($accent-dark, 15);
+  background-color: darken($accent-dark, 15);
+}
+
+.button--solid:active {
+  color: $background-light;
+  border-color: darken($accent-dark, 25);
+  background-color: darken($accent-dark, 25);
+}
+
+.button--solid-light {
+  color: $background-dark;
+  border-color: $accent-light;
+  background-color: $accent-light;
+}
+
+.button--solid-light:disabled, .button--solid-light:hover:disabled {
+  opacity: 0.5;
+  color: $background-dark;
+  border-color: $accent-light;
+  background-color: $accent-light;
+}
+
+.button--solid-light:hover {
+  color: $background-dark;
+  border-color: lighten($accent-light, 15);
+  background-color: lighten($accent-light, 15);
+}
+
+.button--solid-light:active {
+  color: $background-dark;
+  border-color: lighten($accent-light, 25);
+  background-color: lighten($accent-light, 25);
+}

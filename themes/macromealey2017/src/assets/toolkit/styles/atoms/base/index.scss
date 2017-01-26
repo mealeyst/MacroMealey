@@ -1,0 +1,15 @@
+@import 'animations';
+@import 'colors';
+@import 'fonts';
+@import 'grid';
+@import "media-queries";
+@import 'shadows';
+
+.dark {
+  margin: 0;
+  background-color: #3C3333;
+}
+
+#icon--spritesheet {
+  display: none;
+}

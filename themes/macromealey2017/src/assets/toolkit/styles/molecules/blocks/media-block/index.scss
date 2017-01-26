@@ -1,0 +1,40 @@
+.media-block {
+  &__link {
+    display: flex;
+    flex-direction: column;
+    &:before{
+      display: none;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__read-more, &__title{
+    transition: color 0.25s ease-out;
+    &:hover {
+      color: $accent-dark;
+    }
+  }
+  &__image {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    margin-bottom: ($fg_padding * 1px);
+  }
+}
+
+@include breakpoint(sm) {
+  .media-block {
+    &__link {
+      flex-direction: row;
+    }
+    &__image {
+      align-self: flex-start;
+      margin-bottom: 0;
+    }
+    &__text {
+      margin-left: ($fg_padding * 1px);
+    }
+  }
+}

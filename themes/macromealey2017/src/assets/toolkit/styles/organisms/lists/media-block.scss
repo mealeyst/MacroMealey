@@ -1,0 +1,31 @@
+.media-list {
+  &__items {
+    display: flex;
+    flex-direction: column;
+
+    list-style: none;
+    padding: 0 ($fg_gutter * 1px);
+
+    @include fg(12);
+  }
+  &__item {
+    display: flex;
+
+    margin-top: ($fg_padding * 1px);
+    margin-bottom: ($fg_padding * 1px);
+
+    border-radius: 5px;
+    background-color: $background-light;
+
+    @include width(12);
+    @include shadow('small');
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+
+      border-bottom: none;
+    }
+  }
+}

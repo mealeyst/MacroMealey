@@ -1,0 +1,33 @@
+.textarea {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid $background-dark;
+  padding-bottom: 10px;
+  resize: none;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  transition: border-bottom 0.25s ease-out;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  &::placeholder {
+    font-family: 'Roboto';
+    font-weight: 100;
+    transition: color 0.25s ease-out;
+
+    color: $text-secondary;
+  }
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.textarea:focus, .textarea--filled {
+  border-bottom-color: $accent-dark;
+  border-bottom-width: 1px;
+  &::placeholder {
+    color: transparent;
+  }
+}

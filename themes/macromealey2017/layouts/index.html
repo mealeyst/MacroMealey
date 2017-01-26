@@ -1,0 +1,66 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+<article class="homepage">
+  <div class="tile-list">
+    <ul class="tile-list__items">
+      <li class="tile-list__item">
+        <div class="tile--light">
+          <header class="tile__header">
+            <svg class="icon tile__icon" viewbox="0 0 350 350">
+              <use xlink:href="#blog-icon"></use>
+            </svg>
+            <h2 class="tile__title">Latest Blog Post</h2>
+          </header>
+          {{- range first 1 (where .Data.Pages "Type" "article") -}}
+            {{- if eq .Type "article" }}
+              <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <p>{{ .Summary }}</p>
+              <footer class="tile__footer"><a href="{{ .Permalink }}">Read more...</a></footer>
+            {{- end -}}
+          {{- end }}
+        </div>
+      </li>
+      <li class="tile-list__item">
+        <div class="tile--light">
+          <header class="tile__header">
+            <svg class="icon tile__icon" viewbox="0 0 350 350">
+              <use xlink:href="#lab-icon"></use>
+            </svg>
+            <h2 class="tile__title">Latest Expiriment</h2>
+          </header>
+          {{- range first 1 (where .Data.Pages "Type" "lab") -}}
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Summary }}</p>
+            <footer class="tile_  _footer"><a href="{{ .Permalink }}">Read more...</a></footer>
+          {{- end -}}
+        </div>
+      </li>
+      <li class="tile-list__item">
+        <div class="tile--dark">
+          <header class="tile__header">
+            <svg class="icon tile__icon" viewbox="0 0 350 350">
+              <use xlink:href="#about-icon"></use>
+            </svg>
+            <h2 class="tile__title">About Me</h2>
+          </header>
+          <p>My name is Shawn Mealey, and I am a Front End Engineer over at Rockets of Awesome!</p>
+          <footer class="tile_  _footer"><a href="/about">Read more...</a></footer>
+        </div>
+      </li>
+      <li class="tile-list__item">
+        <div class="tile--dark">
+          <header class="tile__header">
+            <svg class="icon tile__icon" viewbox="0 0 350 350">
+              <use xlink:href="#contact-icon"></use>
+            </svg>
+            <h2 class="tile__title">Contact Me</h2>
+          </header>
+          {{ partial "contact-form.html" . }}
+        </div>
+      </li>
+    </ul>
+  </div>
+</article>
+{{ end }}

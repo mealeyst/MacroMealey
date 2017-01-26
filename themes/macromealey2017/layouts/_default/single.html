@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <main class="background" role="content">
+    <div class="post-detail">
+      <article class="blog-post">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+        {{ if in .Params.tags "contact-me" }}
+          {{ partial "contact-form.html" . }}
+        {{ end }}
+      </article>
+    </div>
+  </main>
+{{ end }}

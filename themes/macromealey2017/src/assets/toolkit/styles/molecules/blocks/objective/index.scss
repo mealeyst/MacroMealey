@@ -1,0 +1,8 @@
+.objective {
+  display: flex;
+  flex-direction: column;
+  label {
+    color: $accent-dark;
+    padding-bottom: 10px;
+  }
+}

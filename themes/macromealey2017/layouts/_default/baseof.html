@@ -1,0 +1,22 @@
+<!-- Code that all your templates share, like a header -->
+{{ partial "header.html" . }}
+    <main class="background" role="content">
+      {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+      {{ end }}
+    </main>
+    <footer class="site-footer">
+      <section class="site-footer__full">
+        <h3 class="alternate-text">My Goals:</h3>
+        <hr class="hr--dark"/>
+      </section>
+        <section id="objectives" class="site-footer__objectives">
+        </section>
+      <section class="site-footer__copyright">
+        <hr class="hr--dark"/>
+        <h5 class="alternate-text">This site was developer and designed by Shawn Mealey - Macromealey &copy;2017</h5>
+      </section>
+    </footer>
+    <!-- More shared code, perhaps a footer -->
+  </body>
+</html>

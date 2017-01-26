@@ -1,0 +1,28 @@
+{
+  "objectives": {
+    "Task: Blog Development": {
+      "completed": 90,
+      "total": 100
+    },
+    "Book: On Writing Well": {
+      "completed": 2,
+      "total": 25
+    },
+    "Experiment: Taurus CMS": {
+      "completed": 1,
+      "total": 200
+    },
+    "Book: Programming Ruby": {
+      "completed": 0,
+      "total": 28
+    },
+    "Experiment: WebGL Example": {
+      "completed": 0,
+      "total": 1
+    },
+    "Experiment: Navigation Layouts": {
+      "completed": 0,
+      "total": 5
+    }
+  }
+}

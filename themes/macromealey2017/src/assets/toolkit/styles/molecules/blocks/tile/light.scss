@@ -1,0 +1,7 @@
+.tile--light {
+  @extend .tile;
+  background-color: $background-light;
+  .tile__header {
+    border-color: darken($background-light, 15%);
+  }
+}

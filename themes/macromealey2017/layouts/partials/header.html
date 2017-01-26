@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/styleguide/assets/toolkit/styles/toolkit.css">
+    <script type="text/javascript" src="{{ .Site.BaseURL }}/styleguide/assets/toolkit/scripts/toolkit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/segment-js/1.0.8/segment.js"></script>
+    <title>{{ block "title" . }}
+      {{ .Site.Title }}
+    {{ end }}</title>
+  </head>
+  <body class="dark">
+    <!-- Code that all your templates share, like a header -->
+    <header class="site-navigation">
+      <nav class="site-navigation__mobile ms-nav">
+        <input id="site-toggle" class="ms-nav__toggle" type="checkbox">
+        <label for="site-toggle" class="ms-nav__toggle-interface"></label>
+        <a class="ms-nav__logo link--icon" href="{{ .Site.BaseURL }}">
+          <svg class="icon" viewbox="0 0 350 350">
+            <use xlink:href="#logo-icon"></use>
+          </svg>
+        </a>
+        <div class="ms-nav__drawer">
+          <a href="/about" class="ms-nav__link link--nav">About</a>
+          <a href="/contact" class="ms-nav__link link--nav">Contact</a>
+          <a href="/lab" class="ms-nav__link link--nav">Laboratory</a>
+          <a href="/article" class="ms-nav__link link--nav">Thought</a>
+        </div>
+      </nav>
+      <nav class="site-navigation__desktop ds-nav">
+            <a class="ds__link link--nav" href="/about">ABOUT</a></li>
+            <a class="ds__link link--nav" href="/contact">CONTACT</a></li>
+            <a class="ds__link ds__logo link--icon" href="{{ .Site.BaseURL }}">
+              <svg class="icon" viewbox="0 0 350 350">
+                <use xlink:href="#logo-icon"></use>
+              </svg>
+            </a>
+            <a class="ds__link link--nav" href="/lab">LABORATORY</a>
+            <a class="ds__link link--nav" href="/article">THOUGHTS</a>
+      </nav>
+    </header>

@@ -1,0 +1,14 @@
+.post-listing {
+  padding: ($fg_gutter * 1px) 0;
+  @extend .background;
+  h1 {
+    margin-bottom: ($fg_gutter * 1px);
+    margin-left: ($fg_gutter * 1px);
+  }
+}
+
+@include breakpoint(md) {
+  .post-listing {
+    padding: 80px 0;
+  }
+}

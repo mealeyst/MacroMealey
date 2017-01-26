@@ -1,0 +1,30 @@
+a {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  padding-bottom: 5px;
+  font-family: 'RobotoCond';
+
+  color: $accent-dark;
+  &:before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    background-color: transparent;
+    transform: translateY(5px);
+    transition: background-color 0.25s ease-in, transform 0.25s ease-in;
+  }
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  &:before {
+    background-color: $accent-dark;
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,31 @@
+@import "inline";
+@import "headings";
+@import "link";
+@import "paragraph";
+
+/*Primary*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px
+}
+
+abbr, acronym, b, bdo, big, br, cite, dfn, em, figcaption, h1, h2, h3, h4, h5, h6, i, img,
+kbd, label, map, object, p, q, strong, small, sub, sup, time, tt, var {
+  color: $text-dark;
+}
+
+figcaption, legend {
+  font-family: 'Roboto';
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+.alternate-text {
+  color: $accent-dark;
+}
+
+.text--light {
+  color: $text-light;
+}

@@ -1,0 +1,82 @@
+.ms-nav {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+
+  height: 60px;
+
+  background-color: $background-dark;
+
+  align-items: center;
+  @include shadow('small');
+  &__drawer {
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 80vw;
+
+    transition: transform 0.25s ease-out;
+    transform: translateX(-110%);
+
+    background-color: $background-dark;
+
+    @include shadow('small');
+  }
+  &__toggle {
+    position: absolute;
+    position: absolute;
+
+    visibility: hidden;
+
+    width: 1px;
+    height: 1px;
+  }
+  &__toggle-interface {
+    display: block;
+
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0;
+    margin-left: ($fg_gutter * 1px);
+
+    content: "";
+
+    background: url('../images/HamburgerIcon.svg') transparent;
+  }
+  &__toggle:checked ~ &__toggle-interface {
+    background: url('../images/CloseIconLight.svg') transparent;
+  }
+  &__toggle:checked ~ &__drawer {
+    transform: translateX(0);
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: ($fg_padding * 1px) ($fg_gutter * 1px)
+  }
+  &__logo {
+    position: absolute;
+    left: 50%;
+
+    height: 60px;
+
+    transform: translateX(-50%);
+
+    align-items: center;
+  }
+}
+
+@include breakpoint(sm){
+  .ms-nav {
+    &__drawer {
+      min-width: 45vw;
+    }
+  }
+}

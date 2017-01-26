@@ -1,0 +1,23 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+  <article class="post-listing" style="position: relative;">
+    <div class="media-list">
+      <h1 class="text--light">The Laboratory</h1>
+      <ul class="media-list__items">
+        {{- range first 15 (where .Data.Pages "Type" "lab") -}}
+        <li class="media-list__item">
+          <div class="media-block"><a href="{{ .Permalink }}" class="media-block__link">
+              <aside class="media-block__text">
+                <h3 class="media-block__title">{{ .Title }}</h3>
+                <p>{{ .Summary }}</p>
+                <h5 class="media-block__read-more">Read more...</h5>
+              </aside>
+            </a></div>
+        </li>
+        {{- end -}}
+      </ul>
+    </div>
+  </article>
+{{ end }}

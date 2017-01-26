@@ -1,0 +1,26 @@
+<div id="contact">
+  <form id="email-form" class="form" action="mailto:macromealey@gmail.com" method="post">
+    <input class="textfield--light" type="text" name="name" placeholder="Your Name..."/>
+    <textarea name="message" rows="8" cols="40" placeholder="Your Message..."></textarea>
+    <input id="submit-email" class="button" type="submit" value="Send">
+  </form>
+</div>
+<script>
+  let emailSent = localStorage.getItem('email_sent');
+  let contact = document.getElementById('contact');
+  let sentMessage = 'Thanks for reaching out!';
+  if(!emailSent) {
+    let submit = document.getElementById('submit-email');
+    submit.addEventListener('click', function(event){
+      event.preventDefault();
+      let form = document.getElementById('email-form');
+      let message = form.children.message.value;
+      let name = form.children.name.value;
+      window.open(`mailto:macromealey@gmail.com?subject=Contact-${name}&body=${message}`);
+      localStorage.setItem('email_sent', true);
+      contact.innerHTML = `<h2 class="alternate-text">${sentMessage}</h2>`;
+    });
+  } else {
+    contact.innerHTML = `<h2 class="alternate-text">${sentMessage}</h2>`;
+  }
+</script>

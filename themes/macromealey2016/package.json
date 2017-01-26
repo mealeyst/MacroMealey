@@ -1,0 +1,31 @@
+{
+  "name": "macromealey2016",
+  "version": "0.0.1",
+  "description": "The theme for my personal Hugo Blog",
+  "main": "index.js",
+  "scripts": {
+    "css:build": "node-sass --source-map-embed  --output-style compressed './static-src/assets/src-scss/main.scss' -o static/assets/css/prebuild",
+    "postcss:build": "postcss --use autoprefixer static/assets/css/prebuild/main.css -d static/assets/css/build",
+    "css:watch": "onchange './static-src/assets/src-scss/**/*.scss' -- npm run css:build",
+    "js:build": "browserify static-src/assets/src-js/index.js -o static/assets/js/bundle.js",
+    "js:watch": "watchify static-src/assets/src-js/index.js -o static/assets/js/bundle.js",
+    "build": "npm run css:build && npm run js:build",
+    "prewatch": "npm run build",
+    "watch": "parallelshell 'npm run css:watch' 'npm run js:watch'",
+    "start": "npm run watch"
+  },
+  "keywords": [
+    "Hugo",
+    "Sass",
+    "Blog"
+  ],
+  "author": "Shawn Mealey",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "browserify": "^13.1.1",
+    "node-sass": "^3.10.1",
+    "parallelshell": "^2.0.0",
+    "watchify": "^3.7.0"
+  }
+}

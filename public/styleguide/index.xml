@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Styleguides on MacroMealey</title>
+    <link>http://mealeyst.github.io/styleguide/</link>
+    <description>Recent content in Styleguides on MacroMealey</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Oct 2016 08:23:29 -0400</lastBuildDate>
+    <atom:link href="http://mealeyst.github.io/styleguide/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo Site Builder</title>
+      <link>http://mealeyst.github.io/styleguide/stylefile/</link>
+      <pubDate>Tue, 04 Oct 2016 08:23:29 -0400</pubDate>
+      
+      <guid>http://mealeyst.github.io/styleguide/stylefile/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

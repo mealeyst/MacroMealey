@@ -1,0 +1,10 @@
+.homepage {
+  padding: ($fg_gutter * 1px) 0;
+  @extend .background;
+}
+
+@include breakpoint (md) {
+  .homepage {
+    padding: 40px 0px 80px;
+  }
+}

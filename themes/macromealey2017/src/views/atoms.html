@@ -1,0 +1,15 @@
+---
+fabricator: true
+---
+
+<h1 data-f-toggle="labels">Atoms</h1>
+
+<div>
+  <object type="image/svg+xml" data="./static/assets/toolkit/images/spritesheet.svg">Hello World</object>
+</div>
+
+{{#each materials.atoms.items}}
+
+{{> f-item this}}
+
+{{/each}}

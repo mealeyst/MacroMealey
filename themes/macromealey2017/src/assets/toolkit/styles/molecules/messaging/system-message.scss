@@ -1,0 +1,23 @@
+.system-message {
+  color: $white;
+  background-color: $message;
+  font-family: 'RobotoMono';
+  padding: $fg_padding * 1px;
+  &--alert {
+    background-color: $message-alert;
+    font-family: 'RobotoMono';
+    padding: $fg_padding * 1px;
+  }
+  &--error {
+    color: $white;
+    background-color: $message-error;
+    font-family: 'RobotoMono';
+    padding: $fg_padding * 1px;
+  }
+  &--success {
+    color: $white;
+    background-color: $message-success;
+    font-family: 'RobotoMono';
+    padding: $fg_padding * 1px;
+  }
+}

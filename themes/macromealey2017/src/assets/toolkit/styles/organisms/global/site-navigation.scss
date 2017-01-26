@@ -1,0 +1,24 @@
+.site-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 4;
+  &__mobile {
+    display: flex;
+  }
+  &__desktop {
+    display: none;
+  }
+}
+
+@include breakpoint(md) {
+  .site-navigation {
+    &__mobile {
+      display: none;
+    }
+    &__desktop {
+      display: flex;
+    }
+  }
+}

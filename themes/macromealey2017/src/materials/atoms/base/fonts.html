@@ -1,0 +1,10 @@
+{{#each toolkit.fonts}}
+  <div class="f-typographies">
+    <div class="f-typography">
+      <span class="f-font-family">{{@key}}</span>
+      {{#each this}}
+        <span class="f-font-weight">{{this}}</span>
+      {{/each}}
+      </div>
+  </div>
+{{/each}}

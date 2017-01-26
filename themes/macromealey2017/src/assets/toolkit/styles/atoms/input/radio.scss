@@ -1,0 +1,45 @@
+.radio {
+  position: relative;
+
+  display: inline-block;
+
+  width: 13px;
+  height: 13px;
+  margin-right: 6px;
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 13px;
+    height: 13px;
+    margin: 0;
+
+    opacity: 0;
+  }
+}
+
+.radio__svg {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0;
+
+  width: 13px;
+  height: 13px;
+}
+
+.radio__fill {
+  transition: transform 0.05s ease-in;
+  transform: scale(0.0);
+  transform-origin: 50% 50%;
+}
+
+.radio input:focus + .radio__svg {
+  border-radius: 50%;
+  box-shadow: 0px 0px 1px 2px $accent-dark;
+}
+
+.radio input:checked + .radio__svg .radio__fill{
+  transform: scale(1);
+}

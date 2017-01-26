@@ -1,0 +1,41 @@
+.textarea {
+  display: block;
+
+  box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-bottom: ($fg_padding * 1px);
+  padding-bottom: 10px;
+
+  resize: none;
+  transition: border-color 0.25s ease-out;
+
+  border: 3px solid $background-dark;
+  border-radius: 5px;
+  background-color: $background-light;
+
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  &::placeholder {
+    transition: color 0.25s ease-out;
+
+    color: $text-secondary;
+
+    font-family: 'Roboto';
+    font-weight: 100;
+  }
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.textarea:focus, .textarea--filled {
+  padding: 2px, 2px, 12px;
+
+  border-color: $accent-dark;
+  &::placeholder {
+    color: transparent;
+  }
+}

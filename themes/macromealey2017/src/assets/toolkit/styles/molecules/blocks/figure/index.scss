@@ -1,0 +1,19 @@
+figure {
+  max-width: 100%;
+  border-radius: 3px;
+  border: 1px solid $text-secondary;
+  padding: ($fg_padding * 1px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+  }
+  figcaption {
+    padding-top: ($fg_padding * 1px);
+    align-self: flex-start;
+  }
+}

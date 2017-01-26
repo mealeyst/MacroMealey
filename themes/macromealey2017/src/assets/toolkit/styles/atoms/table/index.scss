@@ -1,0 +1,33 @@
+table {
+  border-collapse: collapse;
+}
+tr {
+  &:first-of-type th {
+    border-top: none;
+  }
+  &:last-of-type th {
+    border-bottom: none;
+  }
+}
+th, td {
+  border: 1px solid $accent-dark;
+  padding: 5px;
+}
+th {
+  color: $accent-dark;
+  text-align: left;
+  &:first-of-type {
+    border-left: none;
+  }
+  &:last-of-type {
+    border-right: none;
+  }
+}
+td {
+  &:first-of-type {
+    border-left: none;
+  }
+  &:last-of-type {
+    border-right: none;
+  }
+}

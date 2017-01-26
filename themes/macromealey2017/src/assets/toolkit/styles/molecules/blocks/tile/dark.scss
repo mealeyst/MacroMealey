@@ -1,0 +1,13 @@
+.tile--dark {
+  @extend .tile;
+  background-color: $background-dark;
+  .tile__header {
+    border-color: lighten($background-dark, 15%);
+  }
+  .tile__title {
+    color: $text-light;
+  }
+  p {
+    color: $text-light;
+  }
+}
