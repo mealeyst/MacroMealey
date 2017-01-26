@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About Me on MacroMealey</title>
-    <link>https://mealeyst.github.io/tags/about-me/</link>
+    <link>https://mealeyst.github.io/macromealey/tags/about-me/</link>
     <description>Recent content in About Me on MacroMealey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Oct 2016 08:23:29 -0400</lastBuildDate>
-    <atom:link href="https://mealeyst.github.io/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mealeyst.github.io/macromealey/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About Me</title>
-      <link>https://mealeyst.github.io/about/</link>
+      <link>https://mealeyst.github.io/macromealey/about/</link>
       <pubDate>Tue, 04 Oct 2016 08:23:29 -0400</pubDate>
       
-      <guid>https://mealeyst.github.io/about/</guid>
+      <guid>https://mealeyst.github.io/macromealey/about/</guid>
       <description>&lt;figure&gt;
-  &lt;img src=&#34;https://mealeyst.github.io/Shawn-Mealey.jpg&#34; alt=&#34;Shawn Mealey&#34;&gt;
+  &lt;img src=&#34;https://mealeyst.github.io/macromealey/Shawn-Mealey.jpg&#34; alt=&#34;Shawn Mealey&#34;&gt;
   &lt;figcaption&gt;Shawn circa 2014&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -29,7 +29,7 @@
 &lt;p&gt;In my spare time, I like to exercise, read science fiction, do woodcraft, and get out into nature.  I also spend time with my beautiful fiancée Victoria and our cat Tallulah.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;https://mealeyst.github.io/victoria_and_tallulah.jpg&#34; alt=&#34;Victoria and Tallulah&#34; style=&#34;width: 350px;&#34;&gt;
+  &lt;img src=&#34;https://mealeyst.github.io/macromealey/victoria_and_tallulah.jpg&#34; alt=&#34;Victoria and Tallulah&#34; style=&#34;width: 350px;&#34;&gt;
   &lt;figcaption&gt;My Fiancée Victoria and our cat (kitten at the time of this picture) Tallulah&lt;/figcaption&gt;
 &lt;/figure&gt;
 

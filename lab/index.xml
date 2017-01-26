@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Labs on MacroMealey</title>
-    <link>https://mealeyst.github.io/lab/</link>
+    <link>https://mealeyst.github.io/macromealey/lab/</link>
     <description>Recent content in Labs on MacroMealey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Oct 2016 08:23:29 -0400</lastBuildDate>
-    <atom:link href="https://mealeyst.github.io/lab/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mealeyst.github.io/macromealey/lab/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hugo Site Builder</title>
-      <link>https://mealeyst.github.io/lab/hugo-site-builder/</link>
+      <link>https://mealeyst.github.io/macromealey/lab/hugo-site-builder/</link>
       <pubDate>Tue, 04 Oct 2016 08:23:29 -0400</pubDate>
       
-      <guid>https://mealeyst.github.io/lab/hugo-site-builder/</guid>
+      <guid>https://mealeyst.github.io/macromealey/lab/hugo-site-builder/</guid>
       <description>
 
 &lt;h1 id=&#34;prologue&#34;&gt;Prologue&lt;/h1&gt;
