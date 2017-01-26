@@ -29,12 +29,12 @@
     
     <item>
       <title>About Me</title>
-      <link>https://mealeyst.github.io/macromealey/about/</link>
+      <link>https://mealeyst.github.io/macromealey/about-me/</link>
       <pubDate>Tue, 04 Oct 2016 08:23:29 -0400</pubDate>
       
-      <guid>https://mealeyst.github.io/macromealey/about/</guid>
-      <description>&lt;figure&gt;
-  &lt;img src=&#34;https://mealeyst.github.io/macromealey/Shawn-Mealey.jpg&#34; alt=&#34;Shawn Mealey&#34;&gt;
+      <guid>https://mealeyst.github.io/macromealey/about-me/</guid>
+      <description>&lt;figure style=&#34;width: 370px;&#34;&gt;
+  &lt;img src=&#34;../Shawn-Mealey.jpg&#34; alt=&#34;Shawn Mealey&#34;&gt;
   &lt;figcaption&gt;Shawn circa 2014&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -46,8 +46,8 @@
 
 &lt;p&gt;In my spare time, I like to exercise, read science fiction, do woodcraft, and get out into nature.  I also spend time with my beautiful fiancée Victoria and our cat Tallulah.&lt;/p&gt;
 
-&lt;figure&gt;
-  &lt;img src=&#34;https://mealeyst.github.io/macromealey/victoria_and_tallulah.jpg&#34; alt=&#34;Victoria and Tallulah&#34; style=&#34;width: 350px;&#34;&gt;
+&lt;figure style=&#34;width: 370px;&#34;&gt;
+  &lt;img src=&#34;../victoria_and_tallulah.jpg&#34; alt=&#34;Victoria and Tallulah&#34; style=&#34;width: 350px;&#34;&gt;
   &lt;figcaption&gt;My Fiancée Victoria and our cat (kitten at the time of this picture) Tallulah&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -59,10 +59,10 @@
     
     <item>
       <title>Contact Me</title>
-      <link>https://mealeyst.github.io/macromealey/contact/</link>
+      <link>https://mealeyst.github.io/macromealey/contact-me/</link>
       <pubDate>Tue, 04 Oct 2016 08:23:29 -0400</pubDate>
       
-      <guid>https://mealeyst.github.io/macromealey/contact/</guid>
+      <guid>https://mealeyst.github.io/macromealey/contact-me/</guid>
       <description>&lt;p&gt;Thank you so much for taking the time to reach out to me! If you have any questions about my articles, tutorials, are looking to have me at an event, or have possible opportunities email is the best way to reach me. If you want to follow me on social media, I always try to follow back! I look forward to hearing from you!&lt;/p&gt;
 &lt;h2&gt;Social Media:&lt;/h2&gt;
 &lt;ul&gt;
