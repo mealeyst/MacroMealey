@@ -51,6 +51,12 @@
 	/**
 	* Toolkit JavaScript
 	*/
+	
+	function buildURL() {
+	  console.log(window.location.origin);
+	  // if (window.location.origin === '')
+	}
+	
 	document.addEventListener("DOMContentLoaded", function (event) {
 	  progressLoader().then(function (progressFile) {
 	    var progressJSON = JSON.parse(progressFile);
@@ -106,7 +112,7 @@
 	  Object.keys(elements).map(function (element) {
 	    if (elements[element].id !== 'site-nav-toggle') {
 	      var currentElement = elements[element];
-	      loadSVG(window.location.origin + '/styleguide/assets/toolkit/images/' + type + '.svg').then(function (svg) {
+	      loadSVG(window.location.origin + 'styleguide/assets/toolkit/images/' + type + '.svg').then(function (svg) {
 	        var parser = new DOMParser();
 	        var doc = parser.parseFromString(svg, 'image/svg+xml');
 	        doc.documentElement.addEventListener('click', function () {
@@ -124,7 +130,7 @@
 	}
 	
 	function addIcons() {
-	  loadSVG(window.location.origin + '/styleguide/assets/toolkit/images/spritesheet.svg').then(function (svg) {
+	  loadSVG(window.location.origin + '/macromealey/styleguide/assets/toolkit/images/spritesheet.svg').then(function (svg) {
 	    var parser = new DOMParser();
 	    var doc = parser.parseFromString(svg, 'image/svg+xml');
 	    document.body.appendChild(doc.documentElement);
@@ -152,7 +158,7 @@
 	function progressLoader() {
 	  return new Promise(function (resolve, reject) {
 	    var client = new XMLHttpRequest();
-	    client.open('GET', window.location.origin + '/progress.json');
+	    client.open('GET', window.location.origin + '/macromealey/progress.json');
 	    client.onload = function () {
 	      if (client.status >= 200 && client.status < 300) {
 	        resolve(client.responseText);
