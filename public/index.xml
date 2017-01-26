@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MacroMealey</title>
-    <link>https://mealeyst.github.io/</link>
+    <link>https://mealeyst.github.io/macromealey/</link>
     <description>Recent content on MacroMealey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Jan 2017 18:40:00 -0400</lastBuildDate>
-    <atom:link href="https://mealeyst.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mealeyst.github.io/macromealey/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>New Look - New Feel</title>
-      <link>https://mealeyst.github.io/article/Updated/</link>
+      <link>https://mealeyst.github.io/macromealey/article/Updated/</link>
       <pubDate>Wed, 25 Jan 2017 18:40:00 -0400</pubDate>
       
-      <guid>https://mealeyst.github.io/article/Updated/</guid>
+      <guid>https://mealeyst.github.io/macromealey/article/Updated/</guid>
       <description>&lt;p&gt;If you have noticed, my last post was back in October, and I said how I had hoped to do quick iterations on my site. Well, that plan backfired as when I showed my site to my peers, I received a deal of feedback, the majority being critical. I decided to start from scratch and re-do the theme of my site from scratch.&lt;/p&gt;
 
 &lt;p&gt;So what has changed? The color scheme, the layouts, basically everything! One of the processes that I decided to implement this time was to utilize the Pattern Lab style of organization for my theme. I first tried to utilize the node version of Pattern Lab, but I found that there still seemed to be a few things that were still in flux with the codebase. I looked at other style guide generators and I settled on &lt;a href=&#34;https://fbrctr.github.io/&#34;&gt;Fabricator&lt;/a&gt;.&lt;/p&gt;
@@ -29,12 +29,12 @@
     
     <item>
       <title>About Me</title>
-      <link>https://mealeyst.github.io/about/</link>
+      <link>https://mealeyst.github.io/macromealey/about/</link>
       <pubDate>Tue, 04 Oct 2016 08:23:29 -0400</pubDate>
       
-      <guid>https://mealeyst.github.io/about/</guid>
+      <guid>https://mealeyst.github.io/macromealey/about/</guid>
       <description>&lt;figure&gt;
-  &lt;img src=&#34;https://mealeyst.github.io/Shawn-Mealey.jpg&#34; alt=&#34;Shawn Mealey&#34;&gt;
+  &lt;img src=&#34;https://mealeyst.github.io/macromealey/Shawn-Mealey.jpg&#34; alt=&#34;Shawn Mealey&#34;&gt;
   &lt;figcaption&gt;Shawn circa 2014&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -47,7 +47,7 @@
 &lt;p&gt;In my spare time, I like to exercise, read science fiction, do woodcraft, and get out into nature.  I also spend time with my beautiful fiancée Victoria and our cat Tallulah.&lt;/p&gt;
 
 &lt;figure&gt;
-  &lt;img src=&#34;https://mealeyst.github.io/victoria_and_tallulah.jpg&#34; alt=&#34;Victoria and Tallulah&#34; style=&#34;width: 350px;&#34;&gt;
+  &lt;img src=&#34;https://mealeyst.github.io/macromealey/victoria_and_tallulah.jpg&#34; alt=&#34;Victoria and Tallulah&#34; style=&#34;width: 350px;&#34;&gt;
   &lt;figcaption&gt;My Fiancée Victoria and our cat (kitten at the time of this picture) Tallulah&lt;/figcaption&gt;
 &lt;/figure&gt;
 
@@ -59,10 +59,10 @@
     
     <item>
       <title>Contact Me</title>
-      <link>https://mealeyst.github.io/contact/</link>
+      <link>https://mealeyst.github.io/macromealey/contact/</link>
       <pubDate>Tue, 04 Oct 2016 08:23:29 -0400</pubDate>
       
-      <guid>https://mealeyst.github.io/contact/</guid>
+      <guid>https://mealeyst.github.io/macromealey/contact/</guid>
       <description>&lt;p&gt;Thank you so much for taking the time to reach out to me! If you have any questions about my articles, tutorials, are looking to have me at an event, or have possible opportunities email is the best way to reach me. If you want to follow me on social media, I always try to follow back! I look forward to hearing from you!&lt;/p&gt;
 &lt;h2&gt;Social Media:&lt;/h2&gt;
 &lt;ul&gt;
@@ -78,10 +78,10 @@
     
     <item>
       <title>Hugo Site Builder</title>
-      <link>https://mealeyst.github.io/lab/hugo-site-builder/</link>
+      <link>https://mealeyst.github.io/macromealey/lab/hugo-site-builder/</link>
       <pubDate>Tue, 04 Oct 2016 08:23:29 -0400</pubDate>
       
-      <guid>https://mealeyst.github.io/lab/hugo-site-builder/</guid>
+      <guid>https://mealeyst.github.io/macromealey/lab/hugo-site-builder/</guid>
       <description>
 
 &lt;h1 id=&#34;prologue&#34;&gt;Prologue&lt;/h1&gt;
@@ -116,10 +116,10 @@ system in tow, I set out on building my personal site.&lt;/p&gt;
     
     <item>
       <title>A Red Letter Day</title>
-      <link>https://mealeyst.github.io/article/First/</link>
+      <link>https://mealeyst.github.io/macromealey/article/First/</link>
       <pubDate>Mon, 03 Oct 2016 19:20:52 -0400</pubDate>
       
-      <guid>https://mealeyst.github.io/article/First/</guid>
+      <guid>https://mealeyst.github.io/macromealey/article/First/</guid>
       <description>
 
 &lt;h2 id=&#34;today-is-a-red-letter-day&#34;&gt;Today is a Red Letter Day&lt;/h2&gt;
