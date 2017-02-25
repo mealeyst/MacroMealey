@@ -219,25 +219,51 @@
 				</div>
 			</div><div class="f-item-preview">
 	<div class="media-block">
-	<a class="media-block__link">
+	<header class="media-block__header">
+		<a>
+			<h5 class="media-block__date">Jul 4, 2016</h5>
+		</a>
+		<div class="media-block__terms">
+			<h5 class="media-block__terms-title">Tags:</h5>
+			<a class="term">Example</a>
+			<a class="term">Example</a>
+		</div>
+	</header>
+	<main class="media-block__content">
 		<img class="media-block__image" src="http://placehold.it/150" alt="">
 		<aside class="media-block__text">
-			<h3 class="media-block__title">Media Block Title</h3>
+			<h3 class="media-block__title"><a href="#">Media Block Title</a></h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur distinctio sint, odio, perspiciatis ducimus, in temporibus nulla aliquam sed, earum architecto sit tempora est ut dolores hic doloribus? Blanditiis, doloribus.</p>
-			<h5 class="media-block__read-more">Read more...</h5>
+			<footer class="media-block__footer">
+				<h5 class="media-block__read-more"><a href="#">Read more...</a></h5>
+			</footer>
 		</aside>
+	</main>
 	</a>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;media-block&quot;&gt;
-	&lt;a class&#x3D;&quot;media-block__link&quot;&gt;
+	&lt;header class&#x3D;&quot;media-block__header&quot;&gt;
+		&lt;a&gt;
+			&lt;h5 class&#x3D;&quot;media-block__date&quot;&gt;Jul 4, 2016&lt;/h5&gt;
+		&lt;/a&gt;
+		&lt;div class&#x3D;&quot;media-block__terms&quot;&gt;
+			&lt;h5 class&#x3D;&quot;media-block__terms-title&quot;&gt;Tags:&lt;/h5&gt;
+			&lt;a class&#x3D;&quot;term&quot;&gt;Example&lt;/a&gt;
+			&lt;a class&#x3D;&quot;term&quot;&gt;Example&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/header&gt;
+	&lt;main class&#x3D;&quot;media-block__content&quot;&gt;
 		&lt;img class&#x3D;&quot;media-block__image&quot; src&#x3D;&quot;http://placehold.it/150&quot; alt&#x3D;&quot;&quot;&gt;
 		&lt;aside class&#x3D;&quot;media-block__text&quot;&gt;
-			&lt;h3 class&#x3D;&quot;media-block__title&quot;&gt;Media Block Title&lt;/h3&gt;
+			&lt;h3 class&#x3D;&quot;media-block__title&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Media Block Title&lt;/a&gt;&lt;/h3&gt;
 			&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur distinctio sint, odio, perspiciatis ducimus, in temporibus nulla aliquam sed, earum architecto sit tempora est ut dolores hic doloribus? Blanditiis, doloribus.&lt;/p&gt;
-			&lt;h5 class&#x3D;&quot;media-block__read-more&quot;&gt;Read more...&lt;/h5&gt;
+			&lt;footer class&#x3D;&quot;media-block__footer&quot;&gt;
+				&lt;h5 class&#x3D;&quot;media-block__read-more&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Read more...&lt;/a&gt;&lt;/h5&gt;
+			&lt;/footer&gt;
 		&lt;/aside&gt;
+	&lt;/main&gt;
 	&lt;/a&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -722,28 +748,52 @@
 				</div>
 			</div><div class="f-item-preview">
 	<nav class="ds-nav">
-	<a class="ds__link link--nav" href="#">ABOUT</a></li>
-	<a class="ds__link link--nav" href="#">CONTACT</a></li>
-	<a class="ds__link ds__logo link--icon" href="#">
-		<svg class="icon" viewbox="0 0 350 350">
+	<ul class="ds-nav__links">
+		<li class="ds-nav__link">
+			<a class="link--nav" href="#">ABOUT</a>
+		</li>
+		<li class="ds-nav__link">
+			<a class="link--nav" href="#">CONTACT</a>
+		</li>
+		<li class="ds-nav__link">
+			<a class="ds-nav__logo link--icon" href="#">
+				<svg class="icon" viewbox="0 0 350 350">
           <use xlink:href="#logo-icon"></use>
         </svg>
-	</a>
-	<a class="ds__link link--nav" href="#">LABORATORY</a>
-	<a class="ds__link link--nav" href="#">THOUGHTS</a>
+			</a>
+		</li>
+		<li class="ds-nav__link">
+			<a class="link--nav" href="#">LABORATORY</a>
+		</li>
+		<li class="ds-nav__link">
+			<a class="link--nav" href="#">THOUGHTS</a>
+		</li>
+	</ul>
 </nav>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;nav class&#x3D;&quot;ds-nav&quot;&gt;
-	&lt;a class&#x3D;&quot;ds__link link--nav&quot; href&#x3D;&quot;#&quot;&gt;ABOUT&lt;/a&gt;&lt;/li&gt;
-	&lt;a class&#x3D;&quot;ds__link link--nav&quot; href&#x3D;&quot;#&quot;&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
-	&lt;a class&#x3D;&quot;ds__link ds__logo link--icon&quot; href&#x3D;&quot;#&quot;&gt;
-		&lt;svg class&#x3D;&quot;icon&quot; viewbox&#x3D;&quot;0 0 350 350&quot;&gt;
+	&lt;ul class&#x3D;&quot;ds-nav__links&quot;&gt;
+		&lt;li class&#x3D;&quot;ds-nav__link&quot;&gt;
+			&lt;a class&#x3D;&quot;link--nav&quot; href&#x3D;&quot;#&quot;&gt;ABOUT&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;ds-nav__link&quot;&gt;
+			&lt;a class&#x3D;&quot;link--nav&quot; href&#x3D;&quot;#&quot;&gt;CONTACT&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;ds-nav__link&quot;&gt;
+			&lt;a class&#x3D;&quot;ds-nav__logo link--icon&quot; href&#x3D;&quot;#&quot;&gt;
+				&lt;svg class&#x3D;&quot;icon&quot; viewbox&#x3D;&quot;0 0 350 350&quot;&gt;
           &lt;use xlink:href&#x3D;&quot;#logo-icon&quot;&gt;&lt;/use&gt;
         &lt;/svg&gt;
-	&lt;/a&gt;
-	&lt;a class&#x3D;&quot;ds__link link--nav&quot; href&#x3D;&quot;#&quot;&gt;LABORATORY&lt;/a&gt;
-	&lt;a class&#x3D;&quot;ds__link link--nav&quot; href&#x3D;&quot;#&quot;&gt;THOUGHTS&lt;/a&gt;
+			&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;ds-nav__link&quot;&gt;
+			&lt;a class&#x3D;&quot;link--nav&quot; href&#x3D;&quot;#&quot;&gt;LABORATORY&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class&#x3D;&quot;ds-nav__link&quot;&gt;
+			&lt;a class&#x3D;&quot;link--nav&quot; href&#x3D;&quot;#&quot;&gt;THOUGHTS&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
 &lt;/nav&gt;</code></pre>
 </div>
 

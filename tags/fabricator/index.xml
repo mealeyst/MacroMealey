@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on MacroMealey</title>
-    <link>https://mealeyst.github.io/macromealey/article/</link>
-    <description>Recent content in Articles on MacroMealey</description>
+    <title>Fabricator on MacroMealey</title>
+    <link>https://mealeyst.github.io/macromealey/tags/fabricator/</link>
+    <description>Recent content in Fabricator on MacroMealey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Jan 2017 18:40:00 -0400</lastBuildDate>
-    <atom:link href="https://mealeyst.github.io/macromealey/article/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mealeyst.github.io/macromealey/tags/fabricator/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>New Look - New Feel</title>
@@ -62,36 +62,6 @@
 &lt;p&gt;I am going to be writing up a tutorial on how I integrated Fabricator with Hugo in due time, but needless to say the set up was fairly straight forward. I was extremely impressed with the flexibility that Fabricator offered me. I was able to create, iterate, and update my style guide with ease. Some of the longer tasks with the new theme wasn&amp;rsquo;t the coding so much as the design and creation of icons and interactive form elements in Illustrator. If you want to take a look at the style guide of my site and see how it all comes together, feel free to check it out &lt;a href=&#34;https://mealeyst.github.io/macromealey/styleguide&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;All the best!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Red Letter Day</title>
-      <link>https://mealeyst.github.io/macromealey/article/First/</link>
-      <pubDate>Mon, 03 Oct 2016 19:20:52 -0400</pubDate>
-      
-      <guid>https://mealeyst.github.io/macromealey/article/First/</guid>
-      <description>
-
-&lt;h2 id=&#34;today-is-a-red-letter-day&#34;&gt;Today is a Red Letter Day&lt;/h2&gt;
-
-&lt;p&gt;For an awfully long time I have been wanting to create my own personal site, one where I could capture work that I had done both professionally as well as side projects to share with the world. I finally stopped hemming and hawing over how my site would look, feel, and function and decided to just get something functional up on the web and just iterate the heck out of it! If you are curious as to why I have both a &lt;em&gt;blog&lt;/em&gt; as well as a &lt;em&gt;laboratory&lt;/em&gt;, there was an organizational reason for it. I felt that the &lt;em&gt;blog&lt;/em&gt; could be more of a free-form area where I could collect my thoughts on technology, processes related to software development, and act as a coding diary of sorts. In this fashion, the blog is less structural and more open ended then the &lt;em&gt;laboratory&lt;/em&gt;. The &lt;em&gt;laboratory&lt;/em&gt; is relegated to small (or possibly large) project similar to the wonderful work done over at &lt;a href=&#34;http://tympanus.net/codrops/&#34;&gt;CoDrops&lt;/a&gt; where each post (or series of posts) will contain the resources needed to see a project all the way to completion. I felt that the separation would be easier for users to navigate and digest. Now that I have my site up and running there are a few side projects that I have been meaning to sink my teeth into.&lt;/p&gt;
-
-&lt;p&gt;The first project I was hoping to pick up is a professional side project that I have been discussing at work for a while. The idea is to hook up our React user interface to a separate rate repository who&amp;rsquo;s sole purpose is for the generation of a style guide. This repository would then be used as a dependency for the React components as well as our static Rails front end that we have for several of our landing pages. The idea is that the various front ends  would import styles, naming conventions, and possibly generate a barebones HTML/React components based on the elements generated in the style guide. For the style guide portion of the project I was looking to invest in &lt;a href=&#34;https://patternlab.io&#34;&gt;Pattern Lab&lt;/a&gt;. The principles that Brad Frost has put out had intrigued me back in my contractor days at NorthPoint Solutions, and I&amp;rsquo;ve been meaning to implement his work ever since.&lt;/p&gt;
-
-&lt;p&gt;The second project that I have actually already started to work on, but have been failing to put as much time into is the Node.js base CMS &lt;a href=&#34;https://github.com/mealeyst/TaurusCMS&#34;&gt;Taurus CMS&lt;/a&gt;. This has actually been a joint project with several other developers. The purpose of the project is not only to gain a deeper understanding of the inner workings of Node.js, but to also delve into the architecture and development of a full scale enterprise application. For the project I am looking to launch with a MVP product that contains:
-* A database abstraction layer with a working Postgres implementation
-* Command line tools to perform CRUD operations for content types as well as possible database management
-* Use the Hapi framework to create an API to perform CRUD operations for content types
-* Contain example Content Types and Taxonomies&lt;/p&gt;
-
-&lt;p&gt;While that MVP seems small (especially without a front end portion) the small amount of functionality that has been built already has taken a tremendous amount of research and trial and error.&lt;/p&gt;
-
-&lt;p&gt;For the blog, I am looking to start up a &lt;em&gt;Ready for Rails&lt;/em&gt; development blog in which I do a weekly dive into Rails to take me one step closer to being a true start up unicorn, and finally be able to take an entire task from concept to completion at work.&lt;/p&gt;
-
-&lt;p&gt;And as always, I am going to be looking to improve the user experience on the site and make it so that the experience feels more tailored and unique to first time visitors.&lt;/p&gt;
-
-&lt;p&gt;As for now&amp;hellip; Onwards and upwards!&lt;/p&gt;
 </description>
     </item>
     

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on MacroMealey</title>
-    <link>https://mealeyst.github.io/macromealey/article/</link>
-    <description>Recent content in Articles on MacroMealey</description>
+    <title>Blog on MacroMealey</title>
+    <link>https://mealeyst.github.io/macromealey/tags/blog/</link>
+    <description>Recent content in Blog on MacroMealey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Jan 2017 18:40:00 -0400</lastBuildDate>
-    <atom:link href="https://mealeyst.github.io/macromealey/article/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mealeyst.github.io/macromealey/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>New Look - New Feel</title>
