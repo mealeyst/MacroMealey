@@ -125,3 +125,18 @@ a, .link--dark {
     color: lighten($text-light, 8%);
   }
 }
+
+.term {
+  color: $text-light;
+  background-color: $accent-dark;
+  border-radius: 3px;
+  padding: 3px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  &:before {
+    display: none;
+  }
+  &:hover {
+    color: lighten($text-light, 15%);
+  }
+}

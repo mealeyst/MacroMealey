@@ -2,9 +2,14 @@
 * Toolkit JavaScript
 */
 
-function buildURL() {
-  console.log(window.location.origin);
-  // if (window.location.origin === '')
+function buildURL(styleguide = true) {
+  if (window.location.origin === 'http://localhost:3000') {
+    return window.location.origin;
+  } else {
+    var pathArray = window.location.pathname.split( '/' );
+    var pathEnd = styleguide ? '/styleguide' : ''
+    return `${window.location.origin}/${pathArray[1]}${pathEnd}`;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -66,7 +71,8 @@ function modifyToggle(elements, type) {
   Object.keys(elements).map(function (element) {
    if(elements[element].id !== 'site-nav-toggle') {
      var currentElement = elements[element];
-     loadSVG(`${window.location.origin}styleguide/assets/toolkit/images/${type}.svg`).then(function (svg) {
+
+     loadSVG(`${buildURL()}/assets/toolkit/images/${type}.svg`).then(function (svg) {
        var parser = new DOMParser();
        var doc = parser.parseFromString(svg, 'image/svg+xml');
        doc.documentElement.addEventListener('click', function () {
@@ -84,7 +90,7 @@ function modifyToggle(elements, type) {
 }
 
 function addIcons() {
-   loadSVG(`${window.location.origin}/macromealey/styleguide/assets/toolkit/images/spritesheet.svg`).then(function (svg) {
+   loadSVG(`${buildURL()}/assets/toolkit/images/spritesheet.svg`).then(function (svg) {
      var parser = new DOMParser();
      var doc = parser.parseFromString(svg, 'image/svg+xml');
      document.body.appendChild(doc.documentElement);
@@ -112,7 +118,7 @@ function loadSVG(filename) {
 function progressLoader() {
   return new Promise(function (resolve, reject) {
     var client = new XMLHttpRequest();
-    client.open('GET', `${window.location.origin}/macromealey/progress.json`);
+    client.open('GET', `${buildURL(false)}/progress.json`);
     client.onload = function () {
       if(client.status >= 200 && client.status < 300) {
         resolve(client.responseText);

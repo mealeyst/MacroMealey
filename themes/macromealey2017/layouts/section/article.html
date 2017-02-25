@@ -8,15 +8,26 @@
       <ul class="media-list__items">
         {{- range first 15 (where .Data.Pages "Type" "article") -}}
         <li class="media-list__item">
-          <div class="media-block"><a href="{{ .Permalink }}" class="media-block__link">
+          <div class="media-block">
+            <header class="media-block__header">
+              <h5 class="media-block__date">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</h5>
+              <div class="media-block__tags">
+                <h5 class="media-block__tags-title">Tags:</h5>
+                {{- range .Params.tags -}}
+                  <a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+                {{- end -}}
+              </div>
+            </header>
               <aside class="media-block__text">
-                <h3 class="media-block__title">{{ .Title }}</h3>
+                <h3 class="media-block__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
                 <p>{{ .Summary }}</p>
-                <h5 class="media-block__read-more">Read more...</h5>
+                <footer class="media-block__footer">
+                  <h5 class="media-block__read-more"><a href="{{ .Permalink }}">Read more...</a></h5>
+                </footer>
               </aside>
-            </a></div>
+            </div>
         </li>
-        {{- end -}}
+      {{- end -}}
       </ul>
     </div>
   </article>

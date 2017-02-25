@@ -2,7 +2,7 @@
 date = "2016-10-03T19:20:52-04:00"
 title = "A Red Letter Day"
 description = "In this first article I want to talk about my goals for this site, what I want to get out of the site, and what I want you the reader to get out of my site."
-
+tags = ["blog", "theme"]
 +++
 ## Today is a Red Letter Day
 

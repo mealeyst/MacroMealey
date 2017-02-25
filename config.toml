@@ -5,3 +5,5 @@ theme = "macromealey2017"
 baseurl = "https://mealeyst.github.io/macromealey/"
 languageCode = "en-us"
 title = "MacroMealey"
+[taxonomies]
+tag = "tags"

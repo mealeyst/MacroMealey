@@ -1,9 +1,7 @@
-.blog-post {
-  margin: 0 ($fg_gutter * 1px);
-  padding: ($fg_padding * 1px);
-
+.content {
   border-radius: 5px;
   background-color: $alto;
+  padding: ($fg_padding * 1px);
 
   @include shadow('small');
   img {

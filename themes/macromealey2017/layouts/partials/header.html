@@ -28,15 +28,28 @@
           <a href="{{ .Site.BaseURL }}/article" class="ms-nav__link link--nav">Thought</a>
         </div>
       </nav>
+
       <nav class="site-navigation__desktop ds-nav">
-            <a class="ds__link link--nav" href="{{ .Site.BaseURL }}/about-me">ABOUT</a></li>
-            <a class="ds__link link--nav" href="{{ .Site.BaseURL }}/contact-me">CONTACT</a></li>
-            <a class="ds__link ds__logo link--icon" href="{{ .Site.BaseURL }}">
+        <ul class="ds-nav__links">
+          <li class="ds-nav__link">
+            <a class="link--nav" href="{{ .Site.BaseURL }}/about-me">ABOUT</a>
+          </li>
+          <li class="ds-nav__link">
+            <a class="link--nav" href="{{ .Site.BaseURL }}/contact-me">CONTACT</a>
+          </li>
+          <li class="ds-nav__link">
+            <a class="link--nav ds-nav__logo link--icon" href="{{ .Site.BaseURL }}">
               <svg class="icon" viewbox="0 0 350 350">
                 <use xlink:href="#logo-icon"></use>
               </svg>
             </a>
-            <a class="ds__link link--nav" href="{{ .Site.BaseURL }}/lab">LABORATORY</a>
-            <a class="ds__link link--nav" href="{{ .Site.BaseURL }}/article">THOUGHTS</a>
+          </li>
+          <li class="ds-nav__link">
+            <a class="link--nav" href="{{ .Site.BaseURL }}/lab">LABORATORY</a>
+          </li>
+          <li class="ds-nav__link">
+            <a class="link--nav" href="{{ .Site.BaseURL }}/article">THOUGHTS</a>
+          </li>
+        </ul>
       </nav>
     </header>

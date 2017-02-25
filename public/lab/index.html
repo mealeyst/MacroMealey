@@ -29,16 +29,29 @@
           <a href="https://mealeyst.github.io/macromealey//article" class="ms-nav__link link--nav">Thought</a>
         </div>
       </nav>
+
       <nav class="site-navigation__desktop ds-nav">
-            <a class="ds__link link--nav" href="https://mealeyst.github.io/macromealey//about-me">ABOUT</a></li>
-            <a class="ds__link link--nav" href="https://mealeyst.github.io/macromealey//contact-me">CONTACT</a></li>
-            <a class="ds__link ds__logo link--icon" href="https://mealeyst.github.io/macromealey/">
+        <ul class="ds-nav__links">
+          <li class="ds-nav__link">
+            <a class="link--nav" href="https://mealeyst.github.io/macromealey//about-me">ABOUT</a>
+          </li>
+          <li class="ds-nav__link">
+            <a class="link--nav" href="https://mealeyst.github.io/macromealey//contact-me">CONTACT</a>
+          </li>
+          <li class="ds-nav__link">
+            <a class="link--nav ds-nav__logo link--icon" href="https://mealeyst.github.io/macromealey/">
               <svg class="icon" viewbox="0 0 350 350">
                 <use xlink:href="#logo-icon"></use>
               </svg>
             </a>
-            <a class="ds__link link--nav" href="https://mealeyst.github.io/macromealey//lab">LABORATORY</a>
-            <a class="ds__link link--nav" href="https://mealeyst.github.io/macromealey//article">THOUGHTS</a>
+          </li>
+          <li class="ds-nav__link">
+            <a class="link--nav" href="https://mealeyst.github.io/macromealey//lab">LABORATORY</a>
+          </li>
+          <li class="ds-nav__link">
+            <a class="link--nav" href="https://mealeyst.github.io/macromealey//article">THOUGHTS</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -48,13 +61,20 @@
     <div class="media-list">
       <h1 class="text--light">The Laboratory</h1>
       <ul class="media-list__items"><li class="media-list__item">
-          <div class="media-block"><a href="https://mealeyst.github.io/macromealey/lab/hugo-site-builder/" class="media-block__link">
+          <div class="media-block">
+            <header class="media-block__header">
+              <h5 class="media-block__date">Tuesday, Oct 4, 2016</h5>
+              <div class="media-block__tags">
+                <h5 class="media-block__tags-title">Tags:</h5><a href="/macromealey/tags/hugo">hugo</a><a href="/macromealey/tags/sass">sass</a></div>
+            </header>
               <aside class="media-block__text">
-                <h3 class="media-block__title">Hugo Site Builder</h3>
+                <h3 class="media-block__title"><a href="https://mealeyst.github.io/macromealey/lab/hugo-site-builder/">Hugo Site Builder</a></h3>
                 <p>Prologue For quite a while, I&rsquo;ve been looking for a content management system that was easy to use, but allowed for loads of customization. I had tried previously to dive into the likes of WinterSmith not wanting to leave the comfort of Node.js which I had taken a liking to. I found that while some of the static Wintersmith was indeed easy to install and get set up, the time it took to do customizations and set up things such as SASS compilation and minification were taking me longer than I had hoped.</p>
-                <h5 class="media-block__read-more">Read more...</h5>
+                <footer class="media-block__footer">
+                  <h5 class="media-block__read-more"><a href="https://mealeyst.github.io/macromealey/lab/hugo-site-builder/">Read more...</a></h5>
+                </footer>
               </aside>
-            </a></div>
+            </div>
         </li></ul>
     </div>
   </article>

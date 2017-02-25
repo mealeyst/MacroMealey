@@ -4,9 +4,9 @@
 {{ define "main" }}
   <article class="post-listing" style="position: relative;">
     <div class="media-list">
-      <h1 class="text--light">The Laboratory</h1>
+      <h1 class="text--light">Taxonomy - {{ .Title }}</h1>
       <ul class="media-list__items">
-        {{- range first 15 (where .Data.Pages "Type" "lab") -}}
+      {{ range .Data.Pages }}
         <li class="media-list__item">
           <div class="media-block">
             <header class="media-block__header">
@@ -27,8 +27,8 @@
               </aside>
             </div>
         </li>
-      {{- end -}}
-      </ul>
-    </div>
-  </article>
-{{ end }}
+        {{- end -}}
+        </ul>
+      </div>
+    </article>
+  {{ end }}

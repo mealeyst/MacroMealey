@@ -1,10 +1,16 @@
-.post-detail {
+.blog-post {
   padding: ($fg_gutter * 1px) 0;
   @extend .background;
+  @include fg(12);
+  &__article {
+    @include width(12);
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
 @include breakpoint(md) {
   .post-detail {
-    padding: 80px 0;
+    padding: 20px 0 80px;
   }
 }

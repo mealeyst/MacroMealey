@@ -8,7 +8,7 @@ title = "Hugo Site Builder"
 
 +++
 
-# Prologue
+## Prologue
 
 For quite a while, I've been looking for a content management system that
 was easy to use, but allowed for loads of customization. I had tried previously

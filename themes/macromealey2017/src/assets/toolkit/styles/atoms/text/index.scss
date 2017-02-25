@@ -22,6 +22,48 @@ figcaption, legend {
   line-height: 1.9rem;
 }
 
+blockquote {
+  margin: ($fg_gutter * 1px);
+  border-left: 10px solid $accent-light;
+  background-color: darken($background-light, 10%);
+  color: $text-secondary;
+  position: relative;
+  padding: 60px ($fg_padding * 1px) 30px 30px;
+  @include shadow('small');
+  font-style: italic;
+  font-family: "Oswald";
+  font-weight: 100;
+  &::before {
+    display: block;
+    content: "\201C";
+    color: $text-dark;
+    font-size: 80px;
+    font-family: 'Oswald';
+    position: absolute;
+    top: 0px;
+    left: 10px;
+  }
+  &::after {
+    display: block;
+    content: "\201D";
+    color: $text-dark;
+    font-size: 80px;
+    font-family: 'Oswald';
+    position: absolute;
+    bottom: -50px;
+    right: 30px;
+  }
+  hr {
+    @extend .hr--dark;
+  }
+}
+
+code {
+  background-color: darken($background-light, 10%);
+  border-radius: 5px;
+  padding: 0 4px
+}
+
 .alternate-text {
   color: $accent-dark;
 }

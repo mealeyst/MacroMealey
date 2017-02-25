@@ -1,28 +1,48 @@
-<header class="site-navigation">
-  <nav class="site-navigation__mobile ms-nav">
-    <input id="site-toggle" class="ms-nav__toggle" type="checkbox">
-    <label for="site-toggle" class="ms-nav__toggle-interface"></label>
-    <a class="ms-nav__logo link--icon" href="#">
-      <svg class="icon" viewbox="0 0 350 350">
-        <use xlink:href="#logo-icon"></use>
-      </svg>
-    </a>
-    <div class="ms-nav__drawer">
-      <a href="" class="ms-nav__link link--nav">About</a>
-      <a href="" class="ms-nav__link link--nav">Contact</a>
-      <a href="" class="ms-nav__link link--nav">Laboratory</a>
-      <a href="" class="ms-nav__link link--nav">Thought</a>
-    </div>
-  </nav>
-  <nav class="site-navigation__desktop ds-nav">
-        <a class="ds__link link--nav" href="#">ABOUT</a></li>
-        <a class="ds__link link--nav" href="#">CONTACT</a></li>
-        <a class="ds__link ds__logo link--icon" href="#">
-          <svg class="icon" viewbox="0 0 350 350">
-            <use xlink:href="#logo-icon"></use>
-          </svg>
-        </a>
-        <a class="ds__link link--nav" href="#">LABORATORY</a>
-        <a class="ds__link link--nav" href="#">THOUGHTS</a>
-  </nav>
-</header>
+<style>
+  .site-navigation {
+    position: relative;
+    width: 100%;
+  }
+</style>
+<div style="position: relative; width: 100%; height: 500px;">
+  <header class="site-navigation">
+    <nav class="site-navigation__mobile ms-nav">
+      <input id="site-toggle" class="ms-nav__toggle" type="checkbox">
+      <label for="site-toggle" class="ms-nav__toggle-interface"></label>
+      <a class="ms-nav__logo link--icon" href="#">
+        <svg class="icon" viewbox="0 0 350 350">
+          <use xlink:href="#logo-icon"></use>
+        </svg>
+      </a>
+      <div class="ms-nav__drawer">
+        <a href="" class="ms-nav__link link--nav">About</a>
+        <a href="" class="ms-nav__link link--nav">Contact</a>
+        <a href="" class="ms-nav__link link--nav">Laboratory</a>
+        <a href="" class="ms-nav__link link--nav">Thought</a>
+      </div>
+    </nav>
+    <nav class="site-navigation__desktop ds-nav">
+      <ul class="ds-nav__links">
+        <li class="ds-nav__link">
+          <a class="link--nav" href="#">ABOUT</a>
+        </li>
+        <li class="ds-nav__link">
+          <a class="link--nav" href="#">CONTACT</a>
+        </li>
+        <li class="ds-nav__link">
+          <a class="ds-nav__logo link--icon" href="#">
+            <svg class="icon" viewbox="0 0 350 350">
+              <use xlink:href="#logo-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="ds-nav__link">
+          <a class="link--nav" href="#">LABORATORY</a>
+        </li>
+        <li class="ds-nav__link">
+          <a class="link--nav" href="#">THOUGHTS</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
