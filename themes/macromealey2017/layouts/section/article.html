@@ -10,11 +10,11 @@
         <li class="media-list__item">
           <div class="media-block">
             <header class="media-block__header">
-              <h5 class="media-block__date">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</h5>
-              <div class="media-block__tags">
-                <h5 class="media-block__tags-title">Tags:</h5>
+              <time>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</time>
+              <div class="tags">
+                <span class="tags__title">Tags:</span>
                 {{- range .Params.tags -}}
-                  <a href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+                  <a class="tag" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
                 {{- end -}}
               </div>
             </header>

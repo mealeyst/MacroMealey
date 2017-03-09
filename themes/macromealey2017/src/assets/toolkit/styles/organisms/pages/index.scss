@@ -1,12 +1,22 @@
 .content {
   border-radius: 5px;
   background-color: $alto;
-  padding: ($fg_padding * 1px);
 
   @include shadow('small');
   img {
     width: 100%;
 
     border-radius: 5px;
+  }
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid $accent-dark;
+    margin-bottom: 40px;
+  }
+  &__title {
+    flex-basis: 1;
+    width: 100%;
   }
 }
