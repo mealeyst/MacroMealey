@@ -2,7 +2,7 @@ contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 theme = "macromealey2017"
-baseurl = "http://macromealey.tech"
+baseurl = "https://mealeyst.github.io/macromealey/"
 languageCode = "en-us"
 title = "MacroMealey"
 [taxonomies]
