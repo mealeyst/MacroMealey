@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sass on MacroMealey</title>
-    <link>http://macromealey.tech/tags/sass/</link>
+    <link>https://mealeyst.github.io/macromealey/tags/sass/</link>
     <description>Recent content in Sass on MacroMealey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Oct 2016 08:23:29 -0400</lastBuildDate>
-    <atom:link href="http://macromealey.tech/tags/sass/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mealeyst.github.io/macromealey/tags/sass/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hugo Site Builder</title>
-      <link>http://macromealey.tech/lab/hugo-site-builder/</link>
+      <link>https://mealeyst.github.io/macromealey/lab/hugo-site-builder/</link>
       <pubDate>Tue, 04 Oct 2016 08:23:29 -0400</pubDate>
       
-      <guid>http://macromealey.tech/lab/hugo-site-builder/</guid>
+      <guid>https://mealeyst.github.io/macromealey/lab/hugo-site-builder/</guid>
       <description>
 
 &lt;h2 id=&#34;prologue&#34;&gt;Prologue&lt;/h2&gt;
